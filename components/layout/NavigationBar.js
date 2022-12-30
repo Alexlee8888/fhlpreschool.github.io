@@ -1,13 +1,14 @@
 import Link from 'next/link';
 import styles from './NavigationBar.module.css';
+import Image from 'next/image';
 
 export default function NavigationBar() {
     return(
         <header className= {styles.header}>
             <div className = {styles.logo}> 
-                <Link href = '/'> Faith Hope & Love Preschool
+                <Link href = '/'> 
+                    Faith Hope & Love Preschool
                 </Link>
-
             </div>
             <nav className = {styles.nav}>
                 <ul>

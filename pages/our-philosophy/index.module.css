@@ -1,17 +1,16 @@
-
 .fixedbgi {
     background-image: url(https://media.istockphoto.com/id/1353553203/photo/forest-wooden-table-background-summer-sunny-meadow-with-green-grass-forest-trees-background.jpg?b=1&s=170667a&w=0&k=20&c=-jvR1WDwcloLXRgRTGeyG3frvrhPIbegdemeL6vY2Pk=);
     background-repeat: no-repeat;
-    background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vw;
-    width: 100vh;
-    text-align: center;
-    overflow: hidden;
+    overflow: hidden; 
     object-fit: cover;
+
+    /* position */
     top:0;
     left: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .scrollbg {
@@ -19,5 +18,6 @@
     padding: 100px 100px;
     color: #676767;
     width: 100vh;
+    height: 100vh;
     height: fit-content;
 }

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './NavigationBar.module.css';
+import Image from 'next/image';
 
 export default function NavigationBar() {
     return(

@@ -1,0 +1,20 @@
+import Link from 'next/link';
+import styles from './NavigationBar.module.css';
+
+export default function NavigationBar() {
+    return(
+        <header className= {styles.header}>
+            <div className = {styles.logo}> Faith Hope & Love Preschool </div>
+            <nav className = {styles.nav}>
+                <ul>
+                    <li> <Link href = '/'> Home </Link></li>
+                    <li> <Link href = '/our-philosophy'> Our Philosophy </Link></li>
+                    <li> <Link href = '/curriculum'> Curriculum </Link></li>
+                    <li> <Link href = '/daily-schedule'> Daily Schedule </Link></li>
+                    <li> <Link href = '/school-calendar'> School Calendar </Link></li>
+                    <li> <Link href = '/enrollment'> Enrollment </Link></li>
+                </ul>
+            </nav>
+        </header>
+    );
+}

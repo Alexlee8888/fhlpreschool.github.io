@@ -4,7 +4,11 @@ import styles from './NavigationBar.module.css';
 export default function NavigationBar() {
     return(
         <header className= {styles.header}>
-            <div className = {styles.logo}> Faith Hope & Love Preschool </div>
+            <div className = {styles.logo}> 
+                <a href = '/'> 
+                    Faith Hope & Love Preschool
+                </a>
+            </div>
             <nav className = {styles.nav}>
                 <ul>
                     <li> <Link href = '/'> Home </Link></li>

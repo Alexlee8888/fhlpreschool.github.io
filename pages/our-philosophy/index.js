@@ -1,7 +1,16 @@
 // doman.com/our-philosophy
+import styles from './index.module.css'
 
-export default function OurPhilosophyPage () {
+export default function OurPhilosophyPage() {
     return (
-        <div> philosophy </div>
+        <div className={styles.fixedbgi}>
+            <div className={styles.scrollbg}>
+
+            </div>
+        </div>
+        
+
+
+
     );
 }

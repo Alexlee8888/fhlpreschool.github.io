@@ -1,0 +1,28 @@
+
+.fixedbgi {
+    background-image: "../../public/backgroundImage.jpg";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20rem;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.scrollbg {
+    background-color: #0f0f0a;
+    padding: 10px 70px;
+    color: #676767;
+}
+
+.imagetest{
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    object-fit: cover;
+}

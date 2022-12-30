@@ -1,7 +1,26 @@
 
 export default function HomePage() {
   return (
-      <p>home page</p>
+    <div>
+      <p>
+        home page
+        home page
+        home page
+        home page
+        home page
+        home page
+        home page
+        home page
+        home page
+        home page
+        home page
+        home page
+        home page
+        home page
+        home page
+      </p>
+    </div>
+      
 
   );
 

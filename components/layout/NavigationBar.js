@@ -5,9 +5,9 @@ export default function NavigationBar() {
     return(
         <header className= {styles.header}>
             <div className = {styles.logo}> 
-                <a href = '/'> 
+                <Link href = '/'> 
                     Faith Hope & Love Preschool
-                </a>
+                </Link>
             </div>
             <nav className = {styles.nav}>
                 <ul>

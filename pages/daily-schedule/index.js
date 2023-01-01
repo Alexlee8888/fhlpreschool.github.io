@@ -1,10 +1,19 @@
 import Image from 'next/image';
 import schedule from '../../public/schedule.png';
-//import styles from './pages/daily-schedule/dailyschedule.css';
+import schedulelogo from '../../public/schedulelogo.png';
+import styles from './index.module.css';
 
 export default function DailySchedulePage() {
     return (
-        <div> 
+        <div className = {styles.center}>
+        
+        <Image
+        //header part (not valid image why?????)
+            src = {schedulelogo}
+            alt = "Schedule Logo"
+            width = "885px"
+            height = "425px"
+        />
         <Image
             src = {schedule}
             alt = "Schedule"

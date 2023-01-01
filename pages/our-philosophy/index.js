@@ -1,17 +1,28 @@
-// doman.com/our-philosophy
-import dynamic from 'next/dynamic'
+// domain.com/our-philosophy
 import styles from './index.module.css'
 
+import bg from '../../public/backgroundImage.jpg'
+import BackgroundImage from '../../components/background-image/BackgroundImage';
 
-const BackgroundImage = dynamic(() => import ("../../public/BackgroundImage"));
-const backgroundImage = 'https://media.istockphoto.com/id/1353553203/photo/forest-wooden-table-background-summer-sunny-meadow-with-green-grass-forest-trees-background.jpg?b=1&s=170667a&w=0&k=20&c=-jvR1WDwcloLXRgRTGeyG3frvrhPIbegdemeL6vY2Pk=';
 
 export default function OurPhilosophyPage() {
     return (
-        <div className={styles.fixedbgi}>
-            <BackgroundImage/>
+        <div className={styles.wrapper}>
+            <BackgroundImage url={bg}>
+                <div className={styles.scrollbg}>
+                    <h3 className={styles.test}> Our commitment is to provide Biblical based
+                        learning experiences that will nurture the children to their full intellectual
+                        , physical, emotional and spiritual potentials. The daily curriculum focuses on
+                        developing the children’s learning skills and a Christian value based character
+                        with the emphasis on integrity, generosity, humility, wisdom, empathy, and leadership.
+                    </h3>
+                </div>
+
+            </BackgroundImage>
 
         </div>
+
+
 
     );
 }

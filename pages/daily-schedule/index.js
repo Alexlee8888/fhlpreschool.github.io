@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import schedule from './schedule.png';
+import schedule from '../../public/schedule.png';
 //import styles from './pages/daily-schedule/dailyschedule.css';
 
 export default function DailySchedulePage() {

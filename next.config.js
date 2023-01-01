@@ -5,9 +5,6 @@ const nextConfig = {
 
 module.exports = {
   nextConfig,
-  images: {
-    domains: [media.istockphoto.com, source.unsplash.com],
-  }
 
 }
   

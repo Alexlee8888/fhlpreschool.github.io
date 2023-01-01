@@ -1,41 +1,21 @@
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import styles from './BackgroundImage.module.css'
 
-function getWindowDimensions() {
-    const {
-        innerWidth: width, innerHeight: height
-    } = window;
-    return {
-        width, height,
-    };
-}
-
-export default function BackgroundImage() {
-    const [width, setWidth] = useState();
-    const [height, setHeight] = useState();
-
-    useEffect(() => {
-        function handleResize() {
-            const { width, height } = getWindowDimensions();
-            setWidth(width);
-            setHeight(height);
-        }
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
-    if (width && height) {
-        return (
-            <Image
-                src= {'https://source.unsplash.com/${width}x/${height}/?nature,water,mountains,landscape'}
-                width={width}
-                height={height}
-                alt = 'background image'
-                quality= '100'
+export default function BackgroundImage(props) {
+    return (
+        <div>
+            <Image className={styles.fixedbgi}
+                src={props.url}
+                alt="backgroundImage"
+                width="0"
+                height="0"
             />
-        );
 
-    }
+            <main>
+                {props.children}
+            </main>
+        </div>
 
-    return null;
+
+    );
 }

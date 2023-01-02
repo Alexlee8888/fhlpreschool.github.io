@@ -5,21 +5,16 @@ import styles from './index.module.css';
 
 export default function DailySchedulePage() {
     return (
-        <div className = {styles.center}>
-        
-        <Image
-        //header part (not valid image why?????)
-            src = {schedulelogo}
-            alt = "Schedule Logo"
-            width = "885px"
-            height = "425px"
-        />
-        <Image
-            src = {schedule}
-            alt = "Schedule"
-            width = "885px"
-            height = "425px"
-        /> 
+        <div className = {styles.fit}>
+            <Image
+                src = {schedulelogo}
+                alt = "Schedule Logo"
+            />
+                
+            <Image
+                src = {schedule}
+                alt = "Schedule"
+            />
         </div>
     );
 }

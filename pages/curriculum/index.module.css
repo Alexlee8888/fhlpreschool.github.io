@@ -1,0 +1,12 @@
+.small{
+    font-size: small;
+}
+
+.med{
+    font-size: medium;
+}
+
+.big{
+    font-size: large;
+    text-decoration: underline;
+}

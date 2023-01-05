@@ -59,6 +59,7 @@ export default function CurriculumPage () {
             <br/>
             Physical development - help the child to understand nature and to care for the world we live in.
             <br/>
+            <br/>
             </p>
 
             <p id = "big7" className= {styles.big}>
@@ -66,8 +67,6 @@ export default function CurriculumPage () {
             </p>
 
             <p id = "med8" className= {styles.med}>
-            <br/>
-            <br/>
             Faith Hope & Love Preschool is blessed with a very large campus and spacious play area, with a varieties of play structures and outdoor activities that are set up for the children to play and explore. This area serves as a place for the children to learn and engage the world around them while also serves as a place to relax. Having fun and running around will allow the children to communicate their feelings and learn social behaviors with their peers. The playground is the place where they will learn many important life lessons and values of sharing, empathy, kindness etc.
             </p>
         </div>

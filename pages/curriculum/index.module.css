@@ -1,12 +1,59 @@
-.small{
-    font-size: small;
-}
-
-.med{
-    font-size: medium;
-}
-
-.big{
-    font-size: large;
+.title {
+    font-size:x-large; 
+    text-align: left;
     text-decoration: underline;
+    font-weight: bold;
+}
+
+.para1 {
+    text-align: center;
+    font-size: x-large;
+}
+
+.para2 {
+    text-align: left;
+    font-size: x-large;
+}
+
+.para3 {
+    text-align: left;
+    font-size: x-large;
+}
+
+.bullets {
+    list-style-type: square;
+    text-align: left;
+    font-size: larger;
+    list-style-position: outside;
+    margin-left: 2.5%;
+}
+
+.ub {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.scrollbg {
+    background-color: white;
+    padding: 2% 12.5%;
+    color: black;
+    margin-top: 22%;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    /* position: relative; */
+}
+
+
+.wrapper {
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.25;
+    word-spacing: 0.5px;
+    letter-spacing: 0.5px;
+    align-items: center;
+    justify-content: center;
 }

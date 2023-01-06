@@ -1,13 +1,13 @@
 /* import {@fontsource/merriweather}; */
- 
-.para1 {
-    font-size:x-large; 
-    text-align: center;
-}
 
 .title {
     font-size:x-large; 
     text-align: left;
+}
+
+.para1 {
+    font-size:larger; 
+    text-align: center;
 }
 
 .para2 {
@@ -15,17 +15,17 @@
     text-align: left;
 }
 
-.ub {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
 .bullets {
     list-style-type: '\2713';
     text-align: left;
     font-size: x-large;
     list-style-position: outside;
-    margin-left: 5%;
+    margin-left: 2.5%;
+}
+
+.ub {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 

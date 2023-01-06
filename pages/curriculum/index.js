@@ -79,7 +79,7 @@ export default function CurriculumPage() {
                 <br />
 
                 <p id="big5" className={styles.title}>
-                    We aim to encourage the child’s growth in following major areas:
+                    We aim to encourage the child&apos;s growth in following major areas:
                 </p>
 
                 <br />
@@ -94,7 +94,7 @@ export default function CurriculumPage() {
                         satisfaction in accomplishing meaningful tasks and learning new skills
                     </li>
                     <li>
-                        Spiritual development – help the child to understand God’s encompassing love
+                        Spiritual development – help the child to understand God&apos;s encompassing love
                     </li>
                     <li>
                         Physical development - help the child to understand nature and

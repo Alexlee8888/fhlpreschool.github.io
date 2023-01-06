@@ -13,7 +13,7 @@ export default function OurPhilosophyPage() {
                     <p className={styles.para1}> Our <span className={styles.ub}> commitment</span>  is to provide Biblical based
                         learning experiences that will nurture the children to their full intellectual
                         , physical, emotional and spiritual potentials. The daily curriculum focuses on
-                        developing the children’s learning skills and a Christian value based character
+                        developing the children&apos;s learning skills and a Christian value based character
                         with the emphasis on integrity, generosity, humility, wisdom, empathy, and leadership.
                     </p>
 
@@ -31,12 +31,12 @@ export default function OurPhilosophyPage() {
                             <li> Promoting curiosity and exploartion to enjoy the learning experience </li>
                             <li> Encouraging problem solving skills and various ways to express creativity</li>
                             <li> Discoverign satisfaction in learning new skills and accomplishing tasks </li>
-                            <li> Understanding God's encompassing love and how to share with others </li>
+                            <li> Understanding God&apos;s encompassing love and how to share with others </li>
                             <li> Establishing personal hygiene and healthy habits </li>
                             <li> Caring for nature and our planet </li>
                             <li> Facilitating learning with high quality learning materials </li>
-                            <li> Dedicated teachers who tend to each child's interests and need</li>
-                            <li> Open environment to enchnace children's communication skills in self-expression or group projects</li>
+                            <li> Dedicated teachers who tend to each child&apos;s interests and need</li>
+                            <li> Open environment to enchnace children&apos;s communication skills in self-expression or group projects</li>
                         </pre>
                     </ul>
 

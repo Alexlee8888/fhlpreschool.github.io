@@ -28,7 +28,7 @@ export default function OurPhilosophyPage() {
 
                     <ul className={styles.bullets}>
                         <pre>
-                            <li> Promoting curiosity and exploartion to enjoy the learning experience </li>
+                            <li> Promoting curiosity and exploration to enjoy the learning experience </li>
                             <li> Encouraging problem solving skills and various ways to express creativity</li>
                             <li> Discoverign satisfaction in learning new skills and accomplishing tasks </li>
                             <li> Understanding God&apos;s encompassing love and how to share with others </li>

@@ -3,7 +3,7 @@ import calendar from '../../public/calendar.png'
 import styles from './index.module.css'
 export default function SchoolCalendarPage () {
     return (
-        <div className={styles.center}> 
+        <div> 
             <Image
                 src = {calendar}
                 alt = "Calendar"

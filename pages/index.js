@@ -5,13 +5,17 @@ export default function HomePage() {
   return (
     <div id='test-div'>
       <p id='test-div'>
-        Please scroll
+      Welcome to Faith Hope Love preschool where
+       children are loved, encouraged and nurtured to reach their full intellectual,
+       emotional, spiritual, and physical potentials. 
       </p>
       <p id='test-div'>
-        Please scroll
+      Train up a child in the way he should go: and when he is old, he will not depart from it. 
+      <br/>
+      Proverbs 22:6
       </p>
       <p id='test-div'>
-        Please scroll
+        video
       </p>
       <p id='test-div'>
         Please scroll

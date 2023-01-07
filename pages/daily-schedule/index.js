@@ -5,12 +5,13 @@ import styles from './index.module.css';
 
 export default function DailySchedulePage() {
     return (
-        <div className = {styles.fit}>
+        <div>
             
                 
             <Image
                 src = {schedule}
                 alt = "Schedule"
+                style='height: auto; width: 100%; object-fit: contain'
             />
         </div>
     );

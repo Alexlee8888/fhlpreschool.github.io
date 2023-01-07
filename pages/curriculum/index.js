@@ -10,7 +10,7 @@ export default function CurriculumPage() {
 
                 <p id="med1" className={styles.para1}>
                     Faith Hope and Love Preschool program is designed
-                    for children ages 2 - 6 year-old. Our program promotes
+                    for children 2 - 6 years old. Our program promotes
                     learning through socialization and engaging activities
                     to allow children to work together and learn from each
                     other. Our goal is to provide a safe and nurturing
@@ -113,13 +113,13 @@ export default function CurriculumPage() {
                 <br/>
 
                 <p id="med8" className={styles.para3}>
-                    Faith Hope & Love Preschool is blessed with a <strong>very large campus</strong>
+                    Faith Hope & Love Preschool is blessed with a <strong>very large campus </strong>
                     and spacious play area, with a <strong>varieties of play structures </strong> and
-                    <strong>outdoor activities </strong> that are set up for the children to play and
+                    <strong> outdoor activities </strong> that are set up for the children to play and
                     explore. This area serves as a place for the children to learn
                     and engage the world around them while also serves as a place
                     to relax. Having fun and running around will allow the children
-                    to communicate their feelings and learn social behaviors withS
+                    to communicate their feelings and learn social behaviors with
                     their peers. The playground is the place where they will learn
                     many important life lessons and values of sharing, empathy, kindness etc.
                 </p>

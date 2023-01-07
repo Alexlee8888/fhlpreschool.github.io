@@ -6,10 +6,7 @@ import styles from './index.module.css';
 export default function DailySchedulePage() {
     return (
         <div className = {styles.fit}>
-            <Image
-                src = {schedulelogo}
-                alt = "Schedule Logo"
-            />
+            
                 
             <Image
                 src = {schedule}

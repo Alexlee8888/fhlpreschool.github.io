@@ -30,13 +30,13 @@ export default function OurPhilosophyPage() {
                         <pre>
                             <li> Promoting curiosity and exploration to enjoy the learning experience </li>
                             <li> Encouraging problem solving skills and various ways to express creativity</li>
-                            <li> Discoverign satisfaction in learning new skills and accomplishing tasks </li>
+                            <li> Discovering satisfaction in learning new skills and accomplishing tasks </li>
                             <li> Understanding God&apos;s encompassing love and how to share with others </li>
                             <li> Establishing personal hygiene and healthy habits </li>
                             <li> Caring for nature and our planet </li>
                             <li> Facilitating learning with high quality learning materials </li>
                             <li> Dedicated teachers who tend to each child&apos;s interests and need</li>
-                            <li> Open environment to enchnace children&apos;s communication skills in self-expression or group projects</li>
+                            <li> Open environment to enhance children&apos;s communication skills in self-expression or group projects</li>
                         </pre>
                     </ul>
 
@@ -54,7 +54,7 @@ export default function OurPhilosophyPage() {
                         we believe that increasing interaction and socialization in
                         a bilingual setting will aid in the blending of different cultures.
                         At Faith Hope and Love Preschool, we aim to promote the learning of
-                        Chinese and English languages and cultures,. Through time, students will
+                        Chinese and English languages and cultures. Through time, students will
                         be familiar with both languages and utilize both to communicate
                         with other students in the classroom. Students who are unfamiliar
                         with Chinese or English will learn through communication and close contact

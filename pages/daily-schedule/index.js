@@ -5,14 +5,13 @@ import styles from './index.module.css';
 
 export default function DailySchedulePage() {
     return (
-        <div>
-            
-                
-            <Image
-                src = {schedule}
-                alt = "Schedule"
-                style='height: auto; width: 100%; object-fit: contain'
-            />
+        <div className={styles.container}>  
+            <div className={styles.body}>
+                <Image
+                    src = {schedule}
+                    alt = "Schedule"
+                />
+            </div>
         </div>
     );
 }

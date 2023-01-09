@@ -7,13 +7,14 @@ import '../styles/globals.css'
 import Layout from '../components/layout/Layout';
 
 import Head from "next/head";
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <ParallaxProvider scrollAxis='vertical'>
       <Layout/>
       <Component {...pageProps} />
-    </>
+    </ParallaxProvider>
 
 
 

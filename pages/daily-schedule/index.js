@@ -5,13 +5,15 @@ import styles from './index.module.css';
 
 export default function DailySchedulePage() {
     return (
-        <div className={styles.container}>  
-            <div className={styles.body}>
-                <Image
-                    src = {schedule}
-                    alt = "Schedule"
-                />
-            </div>
+        <div>
+            <br/>
+            <br/>
+            <br/>
+            <Image
+                src={schedule}
+                alt="Schedule"
+                className={styles.center}
+            />
         </div>
     );
 }

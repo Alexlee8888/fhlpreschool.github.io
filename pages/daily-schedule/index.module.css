@@ -1,16 +1,6 @@
-.container {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.body {
-  padding: 2% 12.5%;
-  margin-top: 22%;
+.center {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  display: table;
-  vertical-align: middle;
-  justify-content: center;
-  text-align: center;
+  width: 50%;
 }

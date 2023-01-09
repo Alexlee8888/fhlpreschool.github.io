@@ -16,3 +16,8 @@
     /* color: white; */
     /* background-position: center center; */
 }
+
+.image {
+    position: relative;
+    height: 100vh;
+}

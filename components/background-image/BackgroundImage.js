@@ -5,21 +5,6 @@ import { Parallax, ParallaxProvider, useParallax } from 'react-scroll-parallax'
 
 
 export default function BackgroundImage(props) {
-    // const target = useRef(null);
-    // const backgroundImage = useParallax({
-    //     speed: 500,
-    //     targetElement: target.current,
-    // });
-
-    const [offSetY, setOffSetY] = useState(0);
-    const handleScroll = () => setOffSetY(window.pageYOffset);
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll)
-        };
-    }, []);
 
     return (
         <section>

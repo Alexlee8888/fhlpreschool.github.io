@@ -1,12 +1,28 @@
 import styles from './index.module.css';
 import BackgroundImage from '../../components/background-image/BackgroundImage';
 import bg from '../../public/backgroundImage.jpg'
+import { ParallaxLayer, Parallax } from '@react-spring/parallax';
 
 export default function CurriculumPage() {
     return (
         <div className={styles.wrapper}>
-            <BackgroundImage url={bg} />
-            <div className={styles.scrollbg}>
+            {/* <BackgroundImage url={bg} /> */}
+            <Parallax pages={2}>
+                <ParallaxLayer 
+                offset={0}
+                speed={1}
+                factor={2}
+                style={{
+                    backgroundImage: 'url(${bg})',
+                    backgroundSize: 'cover',
+                }}>
+                </ParallaxLayer>
+                <ParallaxLayer offset={1} speed={0.5}>
+                    <h2>WEB DEV IS COOL</h2>
+                </ParallaxLayer>
+            </Parallax>
+
+            {/* <div className={styles.scrollbg}>
 
                 <p id="med1" className={styles.para1}>
                     Faith Hope and Love Preschool program is designed
@@ -123,7 +139,8 @@ export default function CurriculumPage() {
                     their peers. The playground is the place where they will learn
                     many important life lessons and values of sharing, empathy, kindness etc.
                 </p>
-            </div>
+            </div> */}
+
         </div>
     );
 }

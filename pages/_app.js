@@ -11,10 +11,10 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 export default function App({ Component, pageProps }) {
   return (
     <>
-      {/* <ParallaxProvider scrollAxis='vertical'> */}
-        <Layout />
+      <ParallaxProvider scrollAxis='vertical'>
+        {/* <Layout /> */}
         <Component {...pageProps} />
-      {/* </ParallaxProvider> */}
+      </ParallaxProvider>
     </>
 
 

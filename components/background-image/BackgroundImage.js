@@ -8,7 +8,7 @@ export default function BackgroundImage(props) {
 
     return (
         <section>
-            <div className='styles.fixedbgi' style={{ transform: 'translateY(${offsetY *0.5}px)' }}>
+            <div className={styles.bgi}>
                 <Image
                     src={props.url}
                     alt="backgroundImage"
@@ -17,29 +17,5 @@ export default function BackgroundImage(props) {
                 />
             </div>
         </section>
-
-
-        // <ParallaxProvider className = 'image' bgImage={props.url} strength={800}>
-        //     <div>
-        //         <span> pls work PLEASE </span>
-        //     </div>
-        // </ParallaxProvider>
-        // <ParallaxProvider scrollAxis='vertical'>
-        //     <div ref={target} className={styles.fixedbgi}>
-        //         <div ref={backgroundImage.ref}>
-        //             <Image
-        //                 src={props.url}
-        //                 alt="backgroundImage"
-        //                 width="0"
-        //                 height="0"
-        //             />
-
-        //             <main>
-        //                 {props.children}
-        //             </main>
-        //         </div>
-        //     </div>
-
-        // </ParallaxProvider>
     );
 }

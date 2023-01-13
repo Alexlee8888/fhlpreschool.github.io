@@ -1,8 +1,5 @@
 import Image from 'next/image';
 import styles from './BackgroundImage.module.css'
-import { useState, useEffect, useRef } from 'react';
-import { Parallax, ParallaxProvider, useParallax } from 'react-scroll-parallax'
-
 
 export default function BackgroundImage(props) {
 

@@ -47,9 +47,15 @@
     /* position: relative; */
 }
 
+.bgImage {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
 
 .wrapper {
     height: 100%;
+    width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.25;
     word-spacing: 0.5px;

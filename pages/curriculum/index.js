@@ -6,10 +6,10 @@ import { ParallaxLayer, Parallax } from '@react-spring/parallax';
 
 export default function CurriculumPage() {
     return (
-        <div className={styles.wrapper}>
+        <div>
             {/* <BackgroundImage url={bg} /> */}
-            <Parallax pages={2}>
-                <ParallaxLayer className={styles.image}
+            <Parallax pages={1.75}>
+                <ParallaxLayer className={styles.bgImage}
                     offset={0}
                     speed={0.5}
                     factor={1}>
@@ -17,7 +17,8 @@ export default function CurriculumPage() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={0.25}
-                    speed={0.75}>
+                    speed={1}
+                    factor={1}>
                     <div className={styles.scrollbg}>
 
                         <p id="med1" className={styles.para1}>

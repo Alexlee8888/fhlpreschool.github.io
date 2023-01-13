@@ -18,3 +18,11 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+.relative {
+    position: relative;
+}
+
+.gridLayout {
+    display: inline grid;
+}

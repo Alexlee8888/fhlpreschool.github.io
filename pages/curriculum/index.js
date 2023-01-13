@@ -1,19 +1,22 @@
 import styles from './index.module.css';
-import BackgroundImage from '../../components/background-image/BackgroundImage';
-import bg from '../../public/backgroundImage.jpg'
 import landscape from '../../public/landscape.jpg'
+import Image from 'next/image';
 import { ParallaxLayer, Parallax } from '@react-spring/parallax';
 
 export default function CurriculumPage() {
     return (
-        <div>
-            {/* <BackgroundImage url={bg} /> */}
+        <div className={styles.wrapper}>
+            
             <Parallax pages={1.75}>
-                <ParallaxLayer className={styles.bgImage}
+                <ParallaxLayer
                     offset={0}
                     speed={0.5}
                     factor={1}>
-                    <BackgroundImage url={bg} />
+                    <Image
+                        src={landscape}
+                        alt="backgroundImage"
+                        className={styles.bgImage}
+                    />
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={0.25}

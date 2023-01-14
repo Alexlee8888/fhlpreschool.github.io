@@ -1,4 +1,47 @@
-.center {
-    vertical-align: middle;
-    font-size: "20px";
+
+.para1 {
+    font-size:xx-large; 
+    text-align: center;
 }
+
+
+.wrapper {
+    height: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.25;
+    word-spacing: 0.5px;
+    letter-spacing: 0.5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgImage {
+    display:grid;
+    margin: 0 auto;
+}
+
+.scrollbg {
+    background-color: white;
+    padding: 2% 12.5%;
+    color: black;
+    margin-top: 22%;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    /* position: relative; */
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

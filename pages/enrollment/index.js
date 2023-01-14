@@ -20,17 +20,23 @@ export default function EnrollmentPage() {
                     <p className={styles.para1}>
                         Please fill out the following two forms and email them to preschool@fhlschool.org.
                     </p>
-                    <iframe
-                        src="https://drive.google.com/file/d/1oCIITf_-EuN22PoTbvdeqKA1ePNF_Lqi/view"
-                        height="100%"
-                        width="100%"
-                    ></iframe>
-                    <iframe
-                        src="https://drive.google.com/file/d/14nin4xx5IpaAjjRucPyvuuijDwNnjAyM/view"
-                        height="100%"
-                        width="100%"
-                    ></iframe>
-                    <p>
+                    <div className={styles.row}>
+                        <div className={styles.column}>
+                            <iframe
+                                src="https://drive.google.com/file/d/1oCIITf_-EuN22PoTbvdeqKA1ePNF_Lqi/view"
+                                height="100%"
+                                width="100%"
+                            ></iframe>
+                        </div>
+                        <div className={styles.column}>
+                            <iframe
+                                src="https://drive.google.com/file/d/14nin4xx5IpaAjjRucPyvuuijDwNnjAyM/view"
+                                height="100%"
+                                width="100%"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <p className={styles.para1}>
                         Thank you!
                     </p>
                 </div>

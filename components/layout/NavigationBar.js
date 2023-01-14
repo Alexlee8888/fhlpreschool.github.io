@@ -18,6 +18,7 @@ export default function NavigationBar() {
                     <li> <Link href = '/daily-schedule'> Daily Schedule </Link></li>
                     <li> <Link href = '/school-calendar'> School Calendar </Link></li>
                     <li> <Link href = '/enrollment'> Enrollment </Link></li>
+                    <li> <Link href = '/contact-us'> Contact Us </Link></li>
                 </ul>
             </nav>
         </header>

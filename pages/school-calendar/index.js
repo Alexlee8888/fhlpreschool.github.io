@@ -20,7 +20,6 @@ export default function SchoolCalendarPage() {
                 <Image
                     src={calendar}
                     alt="Calendar"
-                    className={styles.center}
                 />
             </div>
         </ParallaxLayout>

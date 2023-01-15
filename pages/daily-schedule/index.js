@@ -21,7 +21,6 @@ export default function DailySchedulePage() {
                 <Image
                     src={schedule}
                     alt="Schedule"
-                    className={styles.center}
                 />
             </div>
 

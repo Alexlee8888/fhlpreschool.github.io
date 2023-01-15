@@ -16,11 +16,13 @@ export default function SchoolCalendarPage() {
             factor2={2}
             url={landscape}
         >
-            <Image
-                src={calendar}
-                alt="Calendar"
-                className={styles.center}
-            />
+            <div className={styles.scrollbg}>
+                <Image
+                    src={calendar}
+                    alt="Calendar"
+                    className={styles.center}
+                />
+            </div>
         </ParallaxLayout>
     );
 }

@@ -17,10 +17,11 @@ export default function DailySchedulePage() {
             factor2={2}
             url={landscape}
         >
-            <div className = {styles.scrollbg}>
+            <div>
                 <Image
                     src={schedule}
                     alt="Schedule"
+                    className={styles.center}
                 />
             </div>
 

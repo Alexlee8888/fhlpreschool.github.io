@@ -6,7 +6,7 @@ export default function CurriculumPage() {
     return (
         <div className={styles.wrapper}>
             <ParallaxLayout
-                pages={1.75}
+                pages={2.75}
                 offset1={0}
                 speed1={0.5}
                 factor1={1}
@@ -37,8 +37,8 @@ export default function CurriculumPage() {
                     <br />
 
                     <ul id="small3" className={styles.bullets}>
-                        <li> Small class size and low student-teacher ratio (6:1),
-                            which encourages student engagement</li>
+                        <li> <strong> Small class size and low student-teacher ratio (6:1),
+                            which encourages student engagement</strong></li>
                         <li>
                             Daily Chinese and English circle time
                         </li>

@@ -1,5 +1,5 @@
 .title {
-    font-size: x-large;
+    font-size: xxx-large;
     text-align: left;
     text-decoration: underline;
     font-weight: bold;
@@ -7,23 +7,23 @@
 
 .para1 {
     text-align: center;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .para2 {
     text-align: left;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .para3 {
     text-align: left;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .bullets {
     list-style-type: square;
     text-align: left;
-    font-size: larger;
+    font-size: xx-large;
     list-style-position: outside;
     margin-left: 2.5%;
 }

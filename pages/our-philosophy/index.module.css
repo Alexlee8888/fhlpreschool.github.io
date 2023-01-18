@@ -1,6 +1,6 @@
 
 .title {
-    font-size:x-large; 
+    font-size:xx-large; 
     text-align: left;
 }
 
@@ -10,14 +10,14 @@
 }
 
 .para2 {
-    font-size: x-large;
+    font-size: xx-large;
     text-align: left;
 }
 
 .bullets {
     list-style-type: '\2713';
     text-align: left;
-    font-size: x-large;
+    font-size: xx-large;
     list-style-position: outside;
     margin-left: 2.5%;
 }

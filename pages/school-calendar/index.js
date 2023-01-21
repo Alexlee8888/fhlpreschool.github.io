@@ -16,7 +16,7 @@ export default function SchoolCalendarPage() {
             factor2={2}
             url={landscape}
         >
-            <div>
+            <div className={styles.scrollbg}>
                 <Image
                     src={calendar}
                     alt="Calendar"

@@ -7,7 +7,7 @@ export default function EnrollmentPage() {
     return (
         < div className={styles.wrapper} >
             <ParallaxLayout
-                pages={1.75}
+                pages={1.4}
                 offset1={0}
                 speed1={0.5}
                 factor1={1}
@@ -18,7 +18,7 @@ export default function EnrollmentPage() {
             >
                 <div className={styles.scrollbg}>
                     <p className={styles.para1}>
-                        Please fill out the following two forms and email them to preschool@fhlschool.org.
+                        Please fill out the following two forms and email them to preschool@fhlschool.org
                         <br/>
                     </p>
                     <div className={styles.row}>

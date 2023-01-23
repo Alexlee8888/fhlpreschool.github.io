@@ -1,0 +1,19 @@
+.wrapper {
+    text-align: center;
+    line-height: 1.50;
+}
+
+.schoolName {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.otherInfo {
+    font-size: larger;
+}
+
+.link {
+    color: blue;
+    text-decoration: underline;
+}
+

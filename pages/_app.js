@@ -7,9 +7,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <ParallaxProvider className={styles.displayGrid} scrollAxis='vertical'>
-        <Component {...pageProps} />
-        <Layout />
-
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ParallaxProvider>
     </>
 

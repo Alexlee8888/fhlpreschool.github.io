@@ -134,10 +134,6 @@ export default function CurriculumPage() {
                     </p>
                 </div>
             </ParallaxLayout>
-
-
-
-
         </div>
     );
 }

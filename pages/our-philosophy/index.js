@@ -6,7 +6,7 @@ import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 
 export default function OurPhilosophyPage() {
     return (
-        < div className={styles.wrapper} >
+        <div className={styles.wrapper}>
             <ParallaxLayout
                 pages={1.75}
                 offset1={0}

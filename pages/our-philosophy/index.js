@@ -19,8 +19,8 @@ export default function OurPhilosophyPage() {
             >
                 <div className={styles.scrollbg}>
                     <p className={styles.para1}> Our <span className={styles.ub}> commitment</span>  is to provide Biblical based
-                        learning experiences that will nurture the children to their full intellectual
-                        , physical, emotional and spiritual potentials. The daily curriculum focuses on
+                        learning experiences that will nurture the children to their full intellectual,
+                        physical, emotional and spiritual potentials. The daily curriculum focuses on
                         developing the children&apos;s learning skills and a Christian value based character
                         with the emphasis on integrity, generosity, humility, wisdom, empathy, and leadership.
                     </p>

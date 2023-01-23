@@ -29,16 +29,7 @@
 
 
 
-.wrapper {
-    width: 100%;
-    height: 100%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.25;
-    word-spacing: 0.5px;
-    letter-spacing: 0.5px;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .bgImage {
     display:grid;
@@ -52,9 +43,20 @@
     margin-top: 22%;
     margin-left: auto;
     margin-right: auto;
-    display: table;
+    /*display: table;*/
     vertical-align: middle;
     justify-content: center;
     text-align: center;
     /* position: relative; */
   }
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.25;
+    word-spacing: 0.5px;
+    letter-spacing: 0.5px;
+    align-items: center;
+    justify-content: center;
+}

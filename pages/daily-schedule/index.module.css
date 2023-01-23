@@ -3,26 +3,7 @@
   margin: 0 auto;
 }
 
-.wrapper {
-  height: 100%;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  line-height: 1.25;
-  word-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  align-items: center;
-  justify-content: center;
-}
-
 .scrollbg {
   background-color: white;
-  padding: 2% 12.5%;
-  color: black;
-  margin-top: 22%;
-  margin-left: auto;
-  margin-right: auto;
-  display: table;
-  vertical-align: middle;
-  justify-content: center;
-  text-align: center;
-  position: relative;
+  padding: 4% 5.5%;
 }

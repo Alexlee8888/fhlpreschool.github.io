@@ -35,17 +35,15 @@ export default function OurPhilosophyPage() {
                     <br />
 
                     <ul className={styles.bullets}>
-                        <pre>
-                            <li> Promoting curiosity and exploration to enjoy the learning experience </li>
-                            <li> Encouraging problem solving skills and various ways to express creativity</li>
-                            <li> Discovering satisfaction in learning new skills and accomplishing tasks </li>
-                            <li> Understanding God&apos;s encompassing love and how to share with others </li>
-                            <li> Establishing personal hygiene and healthy habits </li>
-                            <li> Caring for nature and our planet </li>
-                            <li> Facilitating learning with high quality learning materials </li>
-                            <li> Dedicated teachers who tend to each child&apos;s interests and need</li>
-                            <li> Open environment to enhance children&apos;s communication skills in self-expression or group projects</li>
-                        </pre>
+                        <li> Promoting curiosity and exploration to enjoy the learning experience </li>
+                        <li> Encouraging problem solving skills and various ways to express creativity</li>
+                        <li> Discovering satisfaction in learning new skills and accomplishing tasks </li>
+                        <li> Understanding God&apos;s encompassing love and how to share with others </li>
+                        <li> Establishing personal hygiene and healthy habits </li>
+                        <li> Caring for nature and our planet </li>
+                        <li> Facilitating learning with high quality learning materials </li>
+                        <li> Dedicated teachers who tend to each child&apos;s interests and need</li>
+                        <li> Open environment to enhance children&apos;s communication skills in self-expression or group projects</li>
                     </ul>
 
                     <br />
@@ -74,6 +72,6 @@ export default function OurPhilosophyPage() {
                     </p>
                 </div>
             </ParallaxLayout>
-        </div >
+        </div>
     );
 }

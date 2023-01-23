@@ -106,7 +106,7 @@ export default function CurriculumPage() {
                             Spiritual development – help the child to understand God&apos;s encompassing love
                         </li>
                         <li>
-                            Physical development - help the child to understand nature and
+                            Physical development – help the child to understand nature and
                             to care for the world we live in.
                         </li>
 

@@ -1,4 +1,8 @@
 .wrapper {
+    background-color: lightgray;
+    color: black;
+    padding: 2% 12.5%;
+    /* margin-top: 22%; */
     text-align: center;
     line-height: 1.50;
 }

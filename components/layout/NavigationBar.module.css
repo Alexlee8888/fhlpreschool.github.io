@@ -73,12 +73,12 @@
 
 .menupadding {
   padding-top:21px;
-  padding-bottom:24px;
+  padding-bottom:21px;
 }
 
 .logopadding {
-  padding-top:24px;
-  padding-bottom:24px;
+  padding-top:26px;
+  padding-bottom:21px;
 }
 
 .header{
@@ -100,7 +100,8 @@
   row-gap: 6px;
   cursor: pointer;
   align-items: flex-end;
-  padding-bottom: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 .nav__menuBar div{
   width: 40px;
@@ -116,7 +117,7 @@
   width: 288px;
   row-gap: 24px;
   right: -288px;
-  padding: 24px 16px;
+  padding: 0px 16px;
   transition: all 0.2s;
   min-height: calc(100vh - 60px);
   background-color: #000000;

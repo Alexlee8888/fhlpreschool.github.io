@@ -5,10 +5,10 @@ import Footer from './Footer'
 export default function Layout(props) {
     return (
         <div>
+            <NavigationBar />
             <main className={styles.main}>
                 {props.children}
             </main>
-            <NavigationBar />
             <Footer />
         </div>
     );

@@ -36,9 +36,9 @@ const MENU_LIST = [
   { text: "Our Philosophy", href: "/our-philosophy" },
   { text: "Curriculum", href: "/curriculum" },
   { text: "Daily Schedule", href: "/daily-schedule" },
-  { text: "School Calendar", href: "/school-calendar" },
+  { text: "Calendar", href: "/school-calendar" },
   { text: "Enrollment", href: "/enrollment" },
-  { text: "Contact Us", href: "/contact-us" },
+  { text: "Contact", href: "/contact-us" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);
@@ -47,29 +47,36 @@ const Navbar = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Link href={"/"} className={styles.link}>
+        <div className={styles.logopadding}>
+          <Link href={"/"} className={styles.link}>
             Faith Hope & Love Preschool
-        </Link>
-        <div
-          onClick={() => setNavActive(!navActive)}
-          className={styles.nav__menuBar}
-        >
-          <div></div>
-          <div></div>
-          <div></div>
+          </Link>
         </div>
-        <div className={`${navActive ? styles.nav__menuList.active : styles.nav__menuList}`}>
-          {MENU_LIST.map((menu, idx) => (
+        <div className={styles.menupadding}>
+          <div className={styles.right}>
             <div
-              onClick={() => {
-                setActiveIdx(idx);
-                setNavActive(false);
-              }}
-              key={menu.text}
+              onClick={() => setNavActive(!navActive)}
+              className={styles.nav__menuBar}
             >
-              <NavItem active={activeIdx === idx} {...menu} />
+              <div></div>
+              <div></div>
+              <div></div>
             </div>
-          ))}
+            <div className={`${navActive ? styles.nav__menuList.active : styles.nav__menuList}`}>
+              {MENU_LIST.map((menu, idx) => (
+                <div
+                  onClick={() => {
+                    setActiveIdx(idx);
+                    setNavActive(false);
+                  }}
+                  key={menu.text}
+                  
+                >
+                  <NavItem active={activeIdx === idx} {...menu} />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </nav>
     </header>

@@ -1,100 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
 
-.link {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
-    text-decoration: none;
-    color: inherit;
-}
-
-.header {
-    position: sticky;
-    z-index: 30;
-    top: 0;
-}
-
-.nav {
-    display: flex;
-    padding: 16px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-}
-
-.nav__menuBar {
-    display: flex;
-    flex-direction: column;
-    row-gap: 6px;
-    cursor: pointer;
-}
-
-.nav__menuBar div {
-    width: 40px;
-    height: 4px;
-    background-color: black;
-    border-radius: 2px;
-}
-
-.nav__menuList {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 60px;
-    width: 288px;
-    row-gap: 24px;
-    right: -288px;
-    padding: 24px 16px;
-    transition: all 0.2s;
-    min-height: calc(100vh - 60px);
-    background-color: #ffffff;
-}
-
-.nav__menuList.active {
-    right: 0;
-}
 
 .nav__link {
     font-size: 18px;
+    text-align: right;
+    color:white;
     position: relative;
     transition: all 0.2s;
 }
 
 .nav__link:hover {
-    font-weight: bold;
+   color:lightblue;
 }
 
-.center {
-    min-height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-    .nav__menuBar {
-        display: none;
-    }
-
-    .nav__menuList {
-        position: unset;
-        flex-direction: row;
-        min-height: fit-content;
-        width: fit-content;
-        column-gap: 24px;
-        align-items: center;
-    }
+@media screen and (min-width: 993px) {
 
     .nav__link::before {
         content: '';
+        text-align: right;
         position: absolute;
         width: 0%;
         height: 6px;
         bottom: -16px;
         left: 0;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         transition: all 0.2s;
     }
 

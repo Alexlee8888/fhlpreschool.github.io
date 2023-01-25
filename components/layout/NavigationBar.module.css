@@ -68,8 +68,19 @@
   box-sizing: border-box;
   font-family: 'Work Sans', sans-serif;
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
+
+.menupadding {
+  padding-top:21px;
+  padding-bottom:24px;
+}
+
+.logopadding {
+  padding-top:24px;
+  padding-bottom:24px;
+}
+
 .header{
   position: fixed;
   z-index: 30;
@@ -78,21 +89,23 @@
 }
 .nav{
   display: flex;
-  padding: 16px;
+  padding: 0px 16px;
   justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
+  background-color: #000000;
 }
+
 .nav__menuBar{
   display: flex;
   flex-direction: column;
   row-gap: 6px;
   cursor: pointer;
+  align-items: flex-end;
+  padding-bottom: 6px;
 }
 .nav__menuBar div{
   width: 40px;
   height: 4px;
-  background-color: rgb(211, 211, 211);
+  background-color: rgb(205, 205, 205);
   border-radius: 2px;
 }
 .nav__menuList{
@@ -106,13 +119,14 @@
   padding: 24px 16px;
   transition: all 0.2s;
   min-height: calc(100vh - 60px);
-  background-color: #f1f1f1;
+  background-color: #000000;
 }
 .nav__menuList.active{
   right: 0;
 }
 .nav__link{
-  font-size: 18px; 
+  font-size: 16px; 
+  font: "PT Sans";
   position: relative;
   transition: all 0.2s;
 }
@@ -121,13 +135,20 @@
  font-weight: bold;
 }
 
+
 .center{
   min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 994px) {
+
+.right {
+  text-align: right;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 993px) {
   .nav__menuBar{
     display: none;
   }

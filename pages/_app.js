@@ -1,17 +1,18 @@
 import styles from '../styles/globals.css'
 import Layout from '../components/layout/Layout';
+import { ChakraProvider } from '@chakra-ui/react'
 
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <ChakraProvider>
       <ParallaxProvider className={styles.displayGrid} scrollAxis='vertical'>
         <Layout>
           <Component {...pageProps} />
         </Layout>
       </ParallaxProvider>
-    </>
+    </ChakraProvider>
 
 
 

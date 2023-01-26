@@ -1,24 +1,95 @@
+import { Button, Container, FormControl, FormErrorMessage, FormLabel, Heading, Input, Textarea } from '@chakra-ui/react';
 import styles from './index.module.css';
-import landscape from '../../public/landscape.jpg'
-import ParallaxLayout from '../../components/parallax/ParallaxLayout';
+import { useState } from 'react';
+import { sendContactForm } from '../../lib/api';
+
+const initValues = { name: "", email: "", message: "", }
+const initState = { values: initValues }
 
 export default function ContactPage() {
-    return (
-        <div className={styles.wrapper}>
-            <ParallaxLayout
-                pages={1.75}
-                offset1={0}
-                speed1={0.5}
-                factor1={1}
-                url={landscape}
-                offset2={0.25}
-                speed2={1}
-                factor2={1}
-            >
-                <div className={styles.scrollbg}>
+    const [state, setState] = useState(initState);
+    const [touch, setTouch] = useState({});
 
-                </div>
-            </ParallaxLayout>
-        </div>
+    const { values, isLoading } = state;
+
+    const onSubmit = async () => {
+        setState((prev) => ({
+            ...prev,
+            isLoading:true
+        }));
+        await sendContactForm(values);
+    }
+
+    const onBlur = ({target}) => setTouch((prev) => ({
+        ...prev,[target.name]:true
+    }))
+
+    const handleChange = ({ target }) => setState((prev) => ({
+        ...prev,
+        values: {
+            ...prev.values,
+            [target.name]: target.value,
+        },
+    }))
+
+    return (
+        <Container className={styles.container}>
+            <Heading className={styles.title}>Contact Us</Heading>
+
+
+            <FormControl isRequired isInvalid={touch.name && !values.name} className={styles.formcontrol}>
+                <FormLabel>Name</FormLabel>
+                <Input
+                    type='text'
+                    name="name"
+                    errorBorderColor='red.300'
+                    value={values.name}
+                    onChange={handleChange}
+                    onBlur={onBlur}
+
+                />
+                <FormErrorMessage>Required</FormErrorMessage>
+            </FormControl>
+
+            <FormControl isRequired isInvalid={touch.email && !values.email} className={styles.formcontrol}>
+                <FormLabel>Email</FormLabel>
+                <Input
+                    type='email'
+                    name="email"
+                    errorBorderColor='red.300'
+                    value={values.email}
+                    onChange={handleChange}
+                    onBlur={onBlur}
+                />
+                <FormErrorMessage>Required</FormErrorMessage>
+            </FormControl>
+
+            <FormControl isRequired isInvalid={touch.message && !values.message} className={styles.formcontrol}>
+                <FormLabel>Message</FormLabel>
+                <Textarea
+                    type='text'
+                    name="message"
+                    errorBorderColor='red.300'
+                    rows={5}
+                    value={values.message}
+                    onChange={handleChange}
+                    onBlur={onBlur}
+                />
+                <FormErrorMessage>Required</FormErrorMessage>
+
+            </FormControl>
+
+            <Button
+                className={styles.button}
+                variant="outline"
+                colorScheme='blue'
+                isLoading={isLoading}
+                isDisabled={!values.name||!values.email||!values.message}
+                onClick={onSubmit}
+            >
+                Submit
+            </Button>
+
+        </Container>
     );
 }

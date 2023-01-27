@@ -13,7 +13,7 @@
    color:lightblue;
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 1033px) {
 
     .nav__link::before {
         content: '';

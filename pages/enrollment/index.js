@@ -24,14 +24,14 @@ export default function EnrollmentPage() {
                     <div className={styles.row}>
                         <div className={styles.column}>
                             <iframe
-                                src="https://drive.google.com/file/d/1oCIITf_-EuN22PoTbvdeqKA1ePNF_Lqi/view"
+                                src="https://docs.google.com/document/d/e/2PACX-1vQf6tvZVKRgbzgkhEaMSKGZ_J7UKgaLfiwYNCCkmBOQMWaJQ4u5cdOkR8K1xc3qfILwAMhs51O_QXQc/pub?embedded=true"
                                 height="700px"
                                 width="100%"
                             ></iframe>
                         </div>
                         <div className={styles.column}>
                             <iframe
-                                src="https://drive.google.com/file/d/14nin4xx5IpaAjjRucPyvuuijDwNnjAyM/view"
+                                src="src=https://docs.google.com/document/d/e/2PACX-1vRJ5yKwBOToUAKaQbDuIAkwz1EtibJR7CserPofmawDj4DgElR6X5FJEjm-Qxx7D7fHk8Mtic8NH86t/pub?embedded=true"
                                 height="700px"
                                 width="100%"
                             ></iframe>

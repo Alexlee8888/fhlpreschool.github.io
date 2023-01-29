@@ -31,7 +31,7 @@ export default function EnrollmentPage() {
                         </div>
                         <div className={styles.column}>
                             <iframe
-                                src="src=https://docs.google.com/document/d/e/2PACX-1vRJ5yKwBOToUAKaQbDuIAkwz1EtibJR7CserPofmawDj4DgElR6X5FJEjm-Qxx7D7fHk8Mtic8NH86t/pub?embedded=true"
+                                src="https://docs.google.com/document/d/e/2PACX-1vRJ5yKwBOToUAKaQbDuIAkwz1EtibJR7CserPofmawDj4DgElR6X5FJEjm-Qxx7D7fHk8Mtic8NH86t/pub?embedded=true"
                                 height="700px"
                                 width="100%"
                             ></iframe>

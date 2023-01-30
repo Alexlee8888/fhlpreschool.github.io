@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import calendar from '../../public/calendar.png'
 import styles from './index.module.css'
-import landscape from '../../public/landscape.jpg'
+import bg from '../../public/school_calendar.png'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 import Footer from '../../components/layout/Footer';
 
@@ -16,7 +16,7 @@ export default function SchoolCalendarPage() {
             offset2={0.5}
             speed2={1}
             factor2={2}
-            url={landscape}
+            url={bg}
         >
             <div className={styles.scrollbg}>
                 <Image

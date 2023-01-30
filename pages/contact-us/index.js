@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { sendContactForm } from '../../lib/api';
 import Footer from '../../components/layout/Footer';
 import { ChakraProvider } from '@chakra-ui/react'
+import bg from '../../public/Contact.png'
+
 
 
 

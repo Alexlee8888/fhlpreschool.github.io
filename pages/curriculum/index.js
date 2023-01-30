@@ -1,5 +1,5 @@
 import styles from './index.module.css';
-import landscape from '../../public/landscape.jpg'
+import bg from '../../public/Curriculum.png'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 import Footer from '../../components/layout/Footer';
 
@@ -11,7 +11,7 @@ export default function CurriculumPage() {
                 offset1={0}
                 speed1={0.5}
                 factor1={1}
-                url={landscape}
+                url={bg}
                 offset2={0.25}
                 speed2={1}
                 factor2={1}

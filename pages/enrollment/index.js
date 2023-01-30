@@ -1,5 +1,5 @@
 import styles from './index.module.css'
-import landscape from '../../public/landscape.jpg'
+import bg from '../../public/Enrollment.png'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 import Footer from '../../components/layout/Footer';
 
@@ -14,7 +14,7 @@ export default function EnrollmentPage() {
                 offset2={0.25}
                 speed2={1}
                 factor2={2}
-                url={landscape}
+                url={bg}
             >
                 <div className={styles.scrollbg}>
                     <p className={styles.para1}>

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import schedule from '../../public/schedule.png';
 import styles from './index.module.css';
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
-import landscape from '../../public/landscape.jpg'
+import bg from '../../public/Daily_schedule.png'
 import Footer from '../../components/layout/Footer';
 
 
@@ -16,7 +16,7 @@ export default function DailySchedulePage() {
             offset2={0.5}
             speed2={1}
             factor2={2}
-            url={landscape}
+            url={bg}
         >
             <div className={styles.scrollbg}>
                 <Image

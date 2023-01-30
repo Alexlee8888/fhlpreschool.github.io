@@ -3,6 +3,7 @@ import schedule from '../../public/schedule.png';
 import styles from './index.module.css';
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 import landscape from '../../public/landscape.jpg'
+import Footer from '../../components/layout/Footer';
 
 
 export default function DailySchedulePage() {
@@ -24,7 +25,7 @@ export default function DailySchedulePage() {
                     className={styles.center}
                 />
             </div>
-
+            <Footer/>
         </ParallaxLayout>
 
     );

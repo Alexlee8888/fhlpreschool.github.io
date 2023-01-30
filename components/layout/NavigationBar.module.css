@@ -82,7 +82,7 @@
 }
 
 .header{
-  position: git;
+  position: fixed;
   z-index: 30;
   top: 0;
   width: 100%;

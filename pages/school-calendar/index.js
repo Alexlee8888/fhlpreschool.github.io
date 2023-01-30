@@ -3,6 +3,8 @@ import calendar from '../../public/calendar.png'
 import styles from './index.module.css'
 import landscape from '../../public/landscape.jpg'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
+import Footer from '../../components/layout/Footer';
+
 
 export default function SchoolCalendarPage() {
     return (
@@ -23,6 +25,7 @@ export default function SchoolCalendarPage() {
                     className={styles.center}
                 />
             </div>
+            <Footer />
         </ParallaxLayout>
     );
 }

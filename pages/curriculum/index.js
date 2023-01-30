@@ -1,6 +1,7 @@
 import styles from './index.module.css';
 import landscape from '../../public/landscape.jpg'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
+import Footer from '../../components/layout/Footer';
 
 export default function CurriculumPage() {
     return (
@@ -133,6 +134,7 @@ export default function CurriculumPage() {
                         many important life lessons and values of sharing, empathy, kindness etc.
                     </p>
                 </div>
+                <Footer/>
             </ParallaxLayout>
         </div>
     );

@@ -1,9 +1,10 @@
 import styles from './index.module.css'
+import Footer from '../components/layout/Footer';
 
 
 export default function HomePage() {
   return (
-    <div className={styles.testdiv}>
+    <div>
       <p>
       Welcome to Faith Hope Love preschool where
        children are loved, encouraged and nurtured to reach their full intellectual,
@@ -52,8 +53,8 @@ export default function HomePage() {
 
   
 
+      <Footer/>
       
-
     </div>
 
 

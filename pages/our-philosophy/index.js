@@ -2,6 +2,7 @@
 import styles from './index.module.css'
 import landscape from '../../public/landscape.jpg'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
+import NavBar from '../../components/layout/NavigationBar';
 import Footer from '../../components/layout/Footer';
 
 
@@ -18,6 +19,7 @@ export default function OurPhilosophyPage() {
                 factor2={2}
                 url={landscape}
             >
+
                 <div className={styles.scrollbg}>
                     <p className={styles.para1}> Our <span className={styles.ub}> commitment</span>  is to provide Biblical based
                         learning experiences that will nurture the children to their full intellectual,
@@ -72,7 +74,7 @@ export default function OurPhilosophyPage() {
                         as well as cultural understanding.
                     </p>
                 </div>
-                {/* <Footer/> */}
+                <Footer />
             </ParallaxLayout>
         </div>
     );

@@ -1,13 +1,13 @@
 import styles from './index.module.css'
 import landscape from '../../public/landscape.jpg'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
-
+import Footer from '../../components/layout/Footer';
 
 export default function EnrollmentPage() {
     return (
         < div className={styles.wrapper} >
             <ParallaxLayout
-                pages={1.4}
+                pages={2}
                 offset1={0}
                 speed1={0.5}
                 factor1={1}
@@ -41,6 +41,7 @@ export default function EnrollmentPage() {
                         Thank you!
                     </p>
                 </div>
+                <Footer/>
             </ParallaxLayout>
         </div >
     );

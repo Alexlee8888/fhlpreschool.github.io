@@ -1,60 +1,91 @@
-import styles from './index.module.css'
+import styles from './index.module.css';
 import Footer from '../components/layout/Footer';
-
+import React, { Component } from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import ReactPlayer from 'react-player';
 
 export default function HomePage() {
   return (
     <div>
-      <p>
-      Welcome to Faith Hope Love preschool where
-       children are loved, encouraged and nurtured to reach their full intellectual,
-       emotional, spiritual, and physical potentials. 
-      </p>
-      <p>
-      Train up a child in the way he should go: and when he is old, he will not depart from it. 
-      <br/>
-      Proverbs 22:6
-      </p>
-      <p>
-      Train up a child in the way he should go: and when he is old, he will not depart from it. 
-      <br/>
-      Proverbs 22:6
-      </p>
-      <p>
-      Train up a child in the way he should go: and when he is old, he will not depart from it. 
-      <br/>
-      Proverbs 22:6
-      </p>
-      <p>
-      Train up a child in the way he should go: and when he is old, he will not depart from it. 
-      <br/>
-      Proverbs 22:6
-      </p>
-      <p>
-      Train up a child in the way he should go: and when he is old, he will not depart from it. 
-      <br/>
-      Proverbs 22:6
-      </p>
-      <p>
-      Train up a child in the way he should go: and when he is old, he will not depart from it. 
-      <br/>
-      Proverbs 22:6
-      </p>
-      <p>
-      Train up a child in the way he should go: and when he is old, he will not depart from it. 
-      <br/>
-      Proverbs 22:6
-      </p>
-      <p>
-      Train up a child in the way he should go: and when he is old, he will not depart from it. 
-      <br/>
-      Proverbs 22:6
-      </p>
+      <div>
+        <p>
+          Welcome to Faith Hope Love preschool where
+          children are loved, encouraged and nurtured to reach their full intellectual,
+          emotional, spiritual, and physical potentials.
+        </p>
+      </div>
+      <div>
+        <p>
+          Train up a child in the way he should go: and when he is old, he will not depart from it.
+          <br />
+          Proverbs 22:6
+        </p>
+      </div>
+      {/* <div>
+        <ReactPlayer url='https://www.youtube.com/watch?v=15lzFgt7cig' />
+      </div> */}
+      <div>
+        <Carousel>
+          <div>
+            <img src="/1.png" alt="image1" />
+            <p className="legend">Image 1</p>
 
-  
+          </div>
+          <div>
+            <img src="/2.png" alt="image2" />
+            <p className="legend">Image 2</p>
 
-      <Footer/>
-      
+          </div>
+          <div>
+            <img src="/3.png" alt="image3" />
+            <p className="legend">Image 3</p>
+
+          </div>
+          <div>
+            <img src="/4.png" alt="image4" />
+            <p className="legend">Image 4</p>
+
+          </div>
+          <div>
+            <img src="/5.png" alt="image5" />
+            <p className="legend">Image 5</p>
+
+          </div>
+        </Carousel>
+        <Carousel>
+          <div>
+            <img src="/1.png" alt="image1" />
+            <p className="legend">Image 1</p>
+
+          </div>
+          <div>
+            <img src="/2.png" alt="image2" />
+            <p className="legend">Image 2</p>
+
+          </div>
+          <div>
+            <img src="/3.png" alt="image3" />
+            <p className="legend">Image 3</p>
+
+          </div>
+          <div>
+            <img src="/4.png" alt="image4" />
+            <p className="legend">Image 4</p>
+
+          </div>
+          <div>
+            <img src="/5.png" alt="image5" />
+            <p className="legend">Image 5</p>
+
+          </div>
+        </Carousel>
+      </div>
+
+
+
+      <Footer />
+
     </div>
 
 

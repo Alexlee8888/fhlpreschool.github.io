@@ -6,3 +6,31 @@
 .center {
     margin:0 auto;
 }
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.paragraph {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    width: 74%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.big {
+    font-size: xx-large;
+}

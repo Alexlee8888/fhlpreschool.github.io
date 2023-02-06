@@ -8,12 +8,14 @@ import ReactPlayer from 'react-player';
 export default function HomePage() {
   return (
     <div>
-      <div>
-        <p>
-          Welcome to Faith Hope Love preschool where
-          children are loved, encouraged and nurtured to reach their full intellectual,
-          emotional, spiritual, and physical potentials.
-        </p>
+      <div className={styles.container}>
+        <div className={styles.paragraph}>
+          <p className={styles.big}>
+            <strong>Welcome to Faith Hope Love preschool where
+            children are loved, encouraged and nurtured to reach their full intellectual,
+            emotional, spiritual, and physical potentials.</strong>
+          </p>
+        </div>
       </div>
       <div>
         <p>
@@ -22,37 +24,10 @@ export default function HomePage() {
           Proverbs 22:6
         </p>
       </div>
-      {/* <div>
-        <ReactPlayer url='https://www.youtube.com/watch?v=15lzFgt7cig' />
-      </div> */}
+      <div className={styles.video}>
+        <iframe width="951" height="535" src="https://www.youtube.com/embed/15lzFgt7cig" title="FHL Preschool Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
       <div>
-        <Carousel>
-          <div>
-            <img src="/1.png" alt="image1" />
-            <p className="legend">Image 1</p>
-
-          </div>
-          <div>
-            <img src="/2.png" alt="image2" />
-            <p className="legend">Image 2</p>
-
-          </div>
-          <div>
-            <img src="/3.png" alt="image3" />
-            <p className="legend">Image 3</p>
-
-          </div>
-          <div>
-            <img src="/4.png" alt="image4" />
-            <p className="legend">Image 4</p>
-
-          </div>
-          <div>
-            <img src="/5.png" alt="image5" />
-            <p className="legend">Image 5</p>
-
-          </div>
-        </Carousel>
         <Carousel>
           <div>
             <img src="/1.png" alt="image1" />

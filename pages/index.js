@@ -12,7 +12,7 @@ import image4 from '../public/images/4.jpg'
 import image5 from '../public/images/5.jpg'
 import image6 from '../public/images/6.jpg'
 import image7 from '../public/images/7.png'
-import image8 from '../public/images/8.JPG'
+import image8 from '../public/images/8.jpg'
 import image9 from '../public/images/9.jpg'
 
 export default function HomePage() {

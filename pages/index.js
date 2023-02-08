@@ -4,16 +4,17 @@ import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import ReactPlayer from 'react-player';
-import image0 from '../public/images/0.jpg'
-import image1 from '../public/images/1.jpg'
-import image2 from '../public/images/2.png'
-import image3 from '../public/images/3.png'
-import image4 from '../public/images/4.jpg'
-import image5 from '../public/images/5.jpg'
-import image6 from '../public/images/6.jpg'
-import image7 from '../public/images/7.png'
-import image8 from '../public/images/8.jpg'
-import image9 from '../public/images/9.jpg'
+// import image0 from '../public/images/0.jpg'
+// import image1 from '../public/images/1.jpg'
+// import image2 from '../public/images/2.png'
+// import image3 from '../public/images/3.png'
+// import image4 from '../public/images/4.jpg'
+// import image5 from '../public/images/5.jpg'
+// import image6 from '../public/images/6.jpg'
+// import image7 from '../public/images/7.png'
+// import image8 from '../public/images/8.jpg'
+// import image9 from '../public/images/9.jpg'
+
 
 export default function HomePage() {
   return (
@@ -74,7 +75,7 @@ export default function HomePage() {
             <img src={image9} alt="image9"/>
           </div>
         </Carousel> */}
-        
+
       </div>
 
 

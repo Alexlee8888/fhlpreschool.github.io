@@ -4,6 +4,16 @@ import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import ReactPlayer from 'react-player';
+import image0 from '../public/images/0.jpg'
+import image1 from '../public/images/1.jpg'
+import image2 from '../public/images/2.png'
+import image3 from '../public/images/3.png'
+import image4 from '../public/images/4.jpg'
+import image5 from '../public/images/5.jpg'
+import image6 from '../public/images/6.jpg'
+import image7 from '../public/images/7.png'
+import image8 from '../public/images/8.JPG'
+import image9 from '../public/images/9.jpg'
 
 export default function HomePage() {
   return (
@@ -14,6 +24,8 @@ export default function HomePage() {
             <strong>Welcome to Faith Hope Love preschool where
             children are loved, encouraged and nurtured to reach their full intellectual,
             emotional, spiritual, and physical potentials.</strong>
+            <br/>
+            <br/>
           </p>
         </div>
       </div>
@@ -22,6 +34,8 @@ export default function HomePage() {
           Train up a child in the way he should go: and when he is old, he will not depart from it.
           <br />
           Proverbs 22:6
+          <br/>
+          <br/>
         </p>
       </div>
       <div className={styles.video}>
@@ -30,29 +44,34 @@ export default function HomePage() {
       <div>
         <Carousel>
           <div>
-            <img src="/1.png" alt="image1" />
-            <p className="legend">Image 1</p>
-
+            <img src={image0} alt="image0"/>
           </div>
           <div>
-            <img src="/2.png" alt="image2" />
-            <p className="legend">Image 2</p>
-
+            <img src={image1} alt="image1"/>
           </div>
           <div>
-            <img src="/3.png" alt="image3" />
-            <p className="legend">Image 3</p>
-
+            <img src={image2} alt="image2"/>
           </div>
           <div>
-            <img src="/4.png" alt="image4" />
-            <p className="legend">Image 4</p>
-
+            <img src={image3} alt="image3"/>
           </div>
           <div>
-            <img src="/5.png" alt="image5" />
-            <p className="legend">Image 5</p>
-
+            <img src={image4} alt="image4"/>
+          </div>
+          <div>
+            <img src={image5} alt="image5"/>
+          </div>
+          <div>
+            <img src={image6} alt="image6"/>
+          </div>
+          <div>
+            <img src={image7} alt="image7"/>
+          </div>
+          <div>
+            <img src={image8} alt="image8"/>
+          </div>
+          <div>
+            <img src={image9} alt="image9"/>
           </div>
         </Carousel>
       </div>

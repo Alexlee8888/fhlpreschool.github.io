@@ -42,7 +42,7 @@ export default function HomePage() {
         <iframe width="951" height="535" src="https://www.youtube.com/embed/15lzFgt7cig" title="FHL Preschool Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <div>
-        <Carousel>
+        {/* <Carousel>
           <div>
             <img src={image0} alt="image0"/>
           </div>
@@ -73,7 +73,8 @@ export default function HomePage() {
           <div>
             <img src={image9} alt="image9"/>
           </div>
-        </Carousel>
+        </Carousel> */}
+        
       </div>
 
 

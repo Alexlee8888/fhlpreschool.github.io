@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import calendar from '../../public/calendar.png'
 import styles from './index.module.css'
+import calendar from '../../public/updatedcalendar1.jpg'
 import bg from '../../public/school_calendar.png'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 import Footer from '../../components/layout/Footer';

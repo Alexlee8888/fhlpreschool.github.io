@@ -38,4 +38,16 @@
 .image {
     width:auto;
     height:500px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+.carousel {
+    width:60%;
+    margin:0 auto;
+}
+
+.caro {
+    margin: 0 auto;
 }

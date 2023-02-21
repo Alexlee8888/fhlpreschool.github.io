@@ -34,3 +34,8 @@
 .big {
     font-size: xx-large;
 }
+
+.image {
+    width:auto;
+    height:500px;
+}

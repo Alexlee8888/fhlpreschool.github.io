@@ -1,19 +1,28 @@
 import styles from './index.module.css';
 import Footer from '../components/layout/Footer';
 import React, { Component } from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-import ReactPlayer from 'react-player';
-// import image0 from '../public/images/0.jpg'
-// import image1 from '../public/images/1.jpg'
-// import image2 from '../public/images/2.png'
-// import image3 from '../public/images/3.png'
-// import image4 from '../public/images/4.jpg'
-// import image5 from '../public/images/5.jpg'
-// import image6 from '../public/images/6.jpg'
-// import image7 from '../public/images/7.png'
-// import image8 from '../public/images/8.jpg'
-// import image9 from '../public/images/9.jpg'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
 
 
 export default function HomePage() {
@@ -23,10 +32,10 @@ export default function HomePage() {
         <div className={styles.paragraph}>
           <p className={styles.big}>
             <strong>Welcome to Faith Hope Love preschool where
-            children are loved, encouraged and nurtured to reach their full intellectual,
-            emotional, spiritual, and physical potentials.</strong>
-            <br/>
-            <br/>
+              children are loved, encouraged and nurtured to reach their full intellectual,
+              emotional, spiritual, and physical potentials.</strong>
+            <br />
+            <br />
           </p>
         </div>
       </div>
@@ -35,180 +44,28 @@ export default function HomePage() {
           Train up a child in the way he should go: and when he is old, he will not depart from it.
           <br />
           Proverbs 22:6
-          <br/>
-          <br/>
+          <br />
+          <br />
         </p>
       </div>
       <div className={styles.video}>
         <iframe width="951" height="535" src="https://www.youtube.com/embed/15lzFgt7cig" title="FHL Preschool Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <div>
-        {/* <Carousel>
-          <div>
-            <img src={image0} alt="image0"/>
-          </div>
-          <div>
-            <img src={image1} alt="image1"/>
-          </div>
-          <div>
-            <img src={image2} alt="image2"/>
-          </div>
-          <div>
-            <img src={image3} alt="image3"/>
-          </div>
-          <div>
-            <img src={image4} alt="image4"/>
-          </div>
-          <div>
-            <img src={image5} alt="image5"/>
-          </div>
-          <div>
-            <img src={image6} alt="image6"/>
-          </div>
-          <div>
-            <img src={image7} alt="image7"/>
-          </div>
-          <div>
-            <img src={image8} alt="image8"/>
-          </div>
-          <div>
-            <img src={image9} alt="image9"/>
-          </div>
-        </Carousel> */}
-
+        <Carousel responsive={responsive}>
+          <div><img src="https://lh5.googleusercontent.com/w3VdlfeiI2ieyB7x6feksrR89ZY6IaxtqE4psZofZTwwHP_W6Kp9QymkHYty6u1veEQ=w2400" alt="image0" className={styles.image}></img></div>
+          <div><img src="https://lh3.googleusercontent.com/HlY2koN198S0ziHbiL8VsMU8AeQGeKg_SG3vGVQrp-6iJDX1pdtXHxcdOtLnjPnqhI8=w2400" alt="image1" className={styles.image}></img></div>
+          <div><img src="https://lh3.googleusercontent.com/DVgxx3v0OTaB5dOO2Wh-PeyfRHw2lUUJfR8KkyAnEdCKvalgr3apmmVPx_EUfg54HKE=w2400" alt="image2" className={styles.image}></img></div>
+          <div><img src="https://lh5.googleusercontent.com/IG-7lv_u7dOknq_dq7jzIZ--kOr8u3VNhYgbL85eEzjpAKsFHq4HTX2htLgOTvHIOb0=w2400" alt="image3" className={styles.image}></img></div>
+          <div><img src="https://lh5.googleusercontent.com/IrHXzM2evGuQliSYvjb-GQcfprpRJHw6HBScQMDPXov6CGMM9tYaERYNJWPQGn_KevA=w2400" alt="image4" className={styles.image}></img></div>
+          <div><img src="https://lh3.googleusercontent.com/xXontd-GJ_T2cnm4uGw9o6jQUqKE92kcMKz_lIC0-N310RChnEIryTHZqEHcYazcPG8=w2400" alt="image5" className={styles.image}></img></div>
+          <div><img src="https://lh6.googleusercontent.com/xti5n0I9epIgJeMUOLYcUAnNV4Vu-r5SS-Lcu_BHKulgYwkH8TsW0EFA6-yD9nzJyms=w2400" alt="image6" className={styles.image}></img></div>
+          <div><img src="https://lh3.googleusercontent.com/zLGVjbKVjU_0aV8URhN60HgT7CcF9_hnP-1PtrzwtpTVClUNJG0AFCfRprCeioJibHE=w2400" alt="image7" className={styles.image}></img></div>
+          <div><img src="https://lh5.googleusercontent.com/_C8-rBQS5GREs3I115TObb34KNoZj8eEjZXhs_NnVGc_5qMe2y935YLJGpryEFp3hZU=w2400" alt="image8" className={styles.image}></img></div>
+          <div><img src="https://lh4.googleusercontent.com/F49D7YjOkWJ3LZKYTiIADMCTBtgHg83Uv4AixYnJ-SCR_LSQTcsyQDlFj0ckx8WrDFk=w2400" alt="image9" className={styles.image}></img></div>
+        </Carousel>
       </div>
-
-
-
       <Footer />
-
     </div>
-
-
   );
-
-
 }
-
-// import Head from 'next/head'
-// import Image from 'next/image'
-// import { Inter } from '@next/font/google'
-
-// const inter = Inter({ subsets: ['latin'] })
-
-// export default function Home() {
-//   return (
-//     <>
-//       <Head>
-//         <title>Faith Hope & Love Preschool</title>
-//         <meta name="description" content="Generated by create next app" />
-//         <meta name="viewport" content="width=device-width, initial-scale=1" />
-//         <link rel="icon" href="/favicon.ico" />
-//       </Head>
-//       <main className={styles.main}>
-//         <div className={styles.description}>
-//           <p>
-//             Get started by editing&nbsp;
-//             <code className={styles.code}>pages/index.js</code>
-//           </p>
-//           <div>
-//             <a
-//               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-//               target="_blank"
-//               rel="noopener noreferrer"
-//             >
-//               By{' '}
-//               <Image
-//                 src="/vercel.svg"
-//                 alt="Vercel Logo"
-//                 className={styles.vercelLogo}
-//                 width={100}
-//                 height={24}
-//                 priority
-//               />
-//             </a>
-//           </div>
-//         </div>
-
-//         <div className={styles.center}>
-//           <Image
-//             className={styles.logo}
-//             src="/next.svg"
-//             alt="Next.js Logo"
-//             width={180}
-//             height={37}
-//             priority
-//           />
-//           <div className={styles.thirteen}>
-//             <Image
-//               src="/thirteen.svg"
-//               alt="13"
-//               width={40}
-//               height={31}
-//               priority
-//             />
-//           </div>
-//         </div>
-
-//         <div className={styles.grid}>
-//           <a
-//             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-//             className={styles.card}
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <h2 className={inter.className}>
-//               Docs <span>-&gt;</span>
-//             </h2>
-//             <p className={inter.className}>
-//               Find in-depth information about Next.js features and&nbsp;API.
-//             </p>
-//           </a>
-
-//           <a
-//             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-//             className={styles.card}
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <h2 className={inter.className}>
-//               Learn <span>-&gt;</span>
-//             </h2>
-//             <p className={inter.className}>
-//               Learn about Next.js in an interactive course with&nbsp;quizzes!
-//             </p>
-//           </a>
-
-//           <a
-//             href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-//             className={styles.card}
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <h2 className={inter.className}>
-//               Templates <span>-&gt;</span>
-//             </h2>
-//             <p className={inter.className}>
-//               Discover and deploy boilerplate example Next.js&nbsp;projects.
-//             </p>
-//           </a>
-
-//           <a
-//             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-//             className={styles.card}
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <h2 className={inter.className}>
-//               Deploy <span>-&gt;</span>
-//             </h2>
-//             <p className={inter.className}>
-//               Instantly deploy your Next.js site to a shareable URL
-//               with&nbsp;Vercel.
-//             </p>
-//           </a>
-//         </div>
-//       </main>
-//     </>
-//   )
-// }

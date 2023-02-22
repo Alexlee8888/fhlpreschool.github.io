@@ -14,6 +14,10 @@
     height: 100%;
 }
 
+.videobg {
+    padding-bottom: 3%;
+}
+
 .paragraph {
     display: flex;
     align-items: center;
@@ -46,8 +50,14 @@
 .carousel {
     width:60%;
     margin:0 auto;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
 }
 
 .caro {
     margin: 0 auto;
+}
+
+.carobg {
+    background-color: gray;
 }

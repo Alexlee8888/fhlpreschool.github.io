@@ -1,5 +1,6 @@
 import NavigationBar from './NavigationBar';
 import styles from './Layout.module.css';
+import Footer from './Footer';
 
 export default function Layout(props) {
     return (
@@ -10,6 +11,7 @@ export default function Layout(props) {
                     {props.children}
                 </main>
             {/* </ChakraProvider> */}
+            <Footer/>
         </div>
     );
 }

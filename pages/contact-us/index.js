@@ -128,7 +128,6 @@ export default function ContactPage() {
                     </Center>
 
                 </Container>
-                <Footer />
             </ChakraProvider>
         </div>
 

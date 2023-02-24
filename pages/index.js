@@ -58,7 +58,7 @@ export default function HomePage() {
       </div>
       <div className={styles.videobg}>
         <div className={styles.video}>
-          <iframe width="951" height="535" src="https://www.youtube.com/embed/15lzFgt7cig" title="FHL Preschool Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="951" height="535" src="https://www.youtube.com/embed/15lzFgt7cig" title="FHL Preschool Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         </div>
       </div>
       <div className={styles.carobg}>

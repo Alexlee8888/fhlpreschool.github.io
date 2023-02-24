@@ -34,7 +34,7 @@
 }
 
 .scrollbg {
-    background-color: rgb(224, 251, 255);
+    background-color: rgb(255, 239, 202);
     padding: 2% 12.5%;
     color: black;
     margin-top: 2.5%;
@@ -54,7 +54,7 @@
 
 
 .wrapper {
-    background-color: rgb(224, 251, 255);
+    background-color: rgb(255, 239, 202);
     height: 100%;
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

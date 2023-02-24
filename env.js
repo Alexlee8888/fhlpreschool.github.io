@@ -1,5 +1,5 @@
 module.exports = {
-    EMAIL : 'alexleeyt8888@gmail.com',
-    EMAIL_PASS : 'fqynbtsqjcgtuzbb'
+    EMAIL : 'preschool@fhlschool.org',
+    EMAIL_PASS : 'tbvgvoxlnyvxkowt'
 }
 

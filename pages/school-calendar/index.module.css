@@ -9,3 +9,7 @@
   background-color: white;
   padding: 4% 5.5%;
 }
+
+.noclick {
+  pointer-events: none;
+}

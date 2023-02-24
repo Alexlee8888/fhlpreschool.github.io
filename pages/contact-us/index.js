@@ -62,6 +62,7 @@ export default function ContactPage() {
         <div>
             <Image
                 src={bg}
+                className={styles.noclick}
                 layout='responsive'
             />
 

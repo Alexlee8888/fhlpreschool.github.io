@@ -13,6 +13,7 @@ export default function OurPhilosophyPage() {
             <div>
                 <Image
                     src={bg}
+                    className={styles.noclick}
                     layout='responsive'
                 />
             </div>
@@ -34,15 +35,15 @@ export default function OurPhilosophyPage() {
                 <br />
 
                 <ul className={styles.bullets}>
-                    <li> Promoting curiosity and exploration to enjoy the learning experience </li>
-                    <li> Encouraging problem solving skills and various ways to express creativity</li>
-                    <li> Discovering satisfaction in learning new skills and accomplishing tasks </li>
-                    <li> Understanding God&apos;s encompassing love and how to share with others </li>
-                    <li> Establishing personal hygiene and healthy habits </li>
-                    <li> Caring for nature and our planet </li>
-                    <li> Facilitating learning with high quality learning materials </li>
-                    <li> Dedicated teachers who tend to each child&apos;s interests and need</li>
-                    <li> Open environment to enhance children&apos;s communication skills in self-expression or group projects</li>
+                    <li> &nbsp;Promoting curiosity and exploration to enjoy the learning experience </li>
+                    <li> &nbsp;Encouraging problem solving skills and various ways to express creativity</li>
+                    <li> &nbsp;Discovering satisfaction in learning new skills and accomplishing tasks </li>
+                    <li> &nbsp;Understanding God&apos;s encompassing love and how to share with others </li>
+                    <li> &nbsp;Establishing personal hygiene and healthy habits </li>
+                    <li> &nbsp;Caring for nature and our planet </li>
+                    <li> &nbsp;Facilitating learning with high quality learning materials </li>
+                    <li> &nbsp;Dedicated teachers who tend to each child&apos;s interests and need</li>
+                    <li> &nbsp;Open environment to enhance children&apos;s communication skills in self-expression or group projects</li>
                 </ul>
 
                 <br />

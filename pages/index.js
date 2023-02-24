@@ -33,6 +33,7 @@ export default function HomePage() {
     <div className={styles.bgc}>
       <Image
         src={bg}
+        className={styles.noclick}
         layout='responsive'
       />
       <div className={styles.container}>

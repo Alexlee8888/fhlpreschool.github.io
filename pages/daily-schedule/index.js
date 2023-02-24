@@ -13,6 +13,7 @@ export default function DailySchedulePage() {
                 <Image
                     src={bg}
                     layout='responsive'
+                    className={styles.noclick}
                 />
             </div>
 

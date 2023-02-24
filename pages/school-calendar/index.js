@@ -12,6 +12,7 @@ export default function SchoolCalendarPage() {
             <div>
                 <Image
                     src={bg}
+                    className={styles.noclick}
                     layout='responsive'
                 />
             </div>

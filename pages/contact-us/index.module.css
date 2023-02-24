@@ -30,3 +30,7 @@
     color: #D2042D	;
     text-align: center;
 }
+
+.noclick {
+    pointer-events: none;
+}

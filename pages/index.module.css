@@ -75,3 +75,7 @@
     font-size: x-large;
     font-weight: bold;
 }
+
+.noclick {
+    pointer-events: none;
+}

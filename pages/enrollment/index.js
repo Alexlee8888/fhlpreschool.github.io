@@ -10,6 +10,7 @@ export default function EnrollmentPage() {
             <div>
                 <Image
                     src={bg}
+                    className={styles.noclick}
                     layout='responsive'
                 />
             </div>

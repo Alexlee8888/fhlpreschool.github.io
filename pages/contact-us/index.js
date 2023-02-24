@@ -62,7 +62,7 @@ export default function ContactPage() {
         <div>
             <Image
                 src={bg}
-                style='responsive'
+                layout='responsive'
             />
 
             <ChakraProvider>

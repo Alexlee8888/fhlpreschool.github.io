@@ -4,14 +4,17 @@ import Footer from './Footer';
 
 export default function Layout(props) {
     return (
-        <div>
+        <>
             <NavigationBar />
-            {/* <ChakraProvider className={styles.main}> */}
+            <div>
+                {/* <ChakraProvider className={styles.main}> */}
                 <main className={styles.main}>
                     {props.children}
                 </main>
-            {/* </ChakraProvider> */}
-            <Footer/>
-        </div>
+                {/* </ChakraProvider> */}
+            </div>
+            <Footer />
+        </>
+
     );
 }

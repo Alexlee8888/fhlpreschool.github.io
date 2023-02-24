@@ -2,7 +2,7 @@ import { Button, Center, Container, FormControl, FormErrorMessage, FormLabel, He
 import styles from './index.module.css';
 import { useState } from 'react';
 import { sendContactForm } from '../../lib/api';
-import Footer from '../../components/layout/Footer';
+import NavigationBar from '../../components/layout/NavigationBar';
 import { ChakraProvider } from '@chakra-ui/react'
 import bg from '../../public/Contact.png'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
@@ -58,8 +58,21 @@ export default function ContactPage() {
         },
     }))
 
+    // const styling = {
+    //     backgroundImage: `url('${bg.src}')`,
+    //     width:"100%",
+    //     height:"100%"
+    // }
+
     return (
-        <div className={styles.div}>
+        <div>
+            <div>
+                <Image
+                    src={bg}
+                    layout='responsive'
+                />
+            </div>
+
             <ChakraProvider>
                 <Container className={styles.container}>
                     <Heading className={styles.title}>Contact Us</Heading>

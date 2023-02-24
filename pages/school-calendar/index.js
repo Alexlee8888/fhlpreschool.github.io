@@ -8,13 +8,22 @@ import Footer from '../../components/layout/Footer';
 
 export default function SchoolCalendarPage() {
     return (
-        <div className={styles.scrollbg}>
-            <Image
-                src={calendar}
-                alt="Calendar"
-                className={styles.center}
-            />
-        </div>
+        <>
+            <div>
+                <Image
+                    src={bg}
+                    layout='responsive'
+                />
+            </div>
+            <div className={styles.scrollbg}>
+                <Image
+                    src={calendar}
+                    alt="Calendar"
+                    className={styles.center}
+                />
+            </div>
+        </>
+
 
     );
 }

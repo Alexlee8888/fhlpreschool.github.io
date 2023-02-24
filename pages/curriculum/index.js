@@ -2,10 +2,17 @@ import styles from './index.module.css';
 import bg from '../../public/Curriculum.png'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 import Footer from '../../components/layout/Footer';
+import Image from 'next/image';
 
 export default function CurriculumPage() {
     return (
         <div className={styles.wrapper}>
+            <div>
+                <Image
+                    src={bg}
+                    layout='responsive'
+                />
+            </div>
             <div className={styles.scrollbg}>
 
                 <p id="med1" className={styles.para1}>

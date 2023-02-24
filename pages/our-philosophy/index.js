@@ -4,11 +4,18 @@ import bg from '../../public/philosophy.png'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 import NavBar from '../../components/layout/NavigationBar';
 import Footer from '../../components/layout/Footer';
+import Image from 'next/image';
 
 
 export default function OurPhilosophyPage() {
     return (
         <div className={styles.wrapper}>
+            <div>
+                <Image
+                    src={bg}
+                    layout='responsive'
+                />
+            </div>
             <div className={styles.scrollbg}>
                 <p className={styles.para1}> Our <span className={styles.ub}> commitment</span>  is to provide Biblical based
                     learning experiences that will nurture the children to their full intellectual,

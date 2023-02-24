@@ -2,10 +2,17 @@ import styles from './index.module.css'
 import bg from '../../public/Enrollment.png'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 import Footer from '../../components/layout/Footer';
+import Image from 'next/image';
 
 export default function EnrollmentPage() {
     return (
         < div className={styles.wrapper} >
+            <div>
+                <Image
+                    src={bg}
+                    layout='responsive'
+                />
+            </div>
             <div className={styles.scrollbg}>
                 <p className={styles.para}>
                     Please fill out the following forms and email them to preschool@fhlschool.org

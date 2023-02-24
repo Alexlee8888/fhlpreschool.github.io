@@ -58,20 +58,12 @@ export default function ContactPage() {
         },
     }))
 
-    // const styling = {
-    //     backgroundImage: `url('${bg.src}')`,
-    //     width:"100%",
-    //     height:"100%"
-    // }
-
     return (
         <div>
-            <div>
-                <Image
-                    src={bg}
-                    layout='responsive'
-                />
-            </div>
+            <Image
+                src={bg}
+                style='responsive'
+            />
 
             <ChakraProvider>
                 <Container className={styles.container}>

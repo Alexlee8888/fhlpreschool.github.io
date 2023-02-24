@@ -1,7 +1,4 @@
-.testdiv {
-    /* position: relative; */
-    font-size: xx-large;
-}
+
 
 .center {
     margin:0 auto;
@@ -28,11 +25,17 @@
 }
 
 .container {
+    margin-top: 2.5%;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     height: 100%;
+}
+
+.bgc{
+    background-color: #ADD8E6;
+
 }
 
 .big {
@@ -59,5 +62,14 @@
 }
 
 .carobg {
-    background-color: gray;
+    background-color: #ADD8E6;
+}
+
+.verse {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #191970;
+    font-size: x-large;
+    font-weight: bold;
 }

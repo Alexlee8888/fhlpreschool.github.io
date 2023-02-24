@@ -3,6 +3,9 @@ import Footer from '../components/layout/Footer';
 import React, { Component } from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Image from 'next/image';
+import bg from '../public/FHLHomePage.png'
+
 
 
 const responsive = {
@@ -27,7 +30,11 @@ const responsive = {
 
 export default function HomePage() {
   return (
-    <div>
+    <div className={styles.bgc}>
+      <Image
+        src={bg}
+        layout='responsive'
+      />
       <div className={styles.container}>
         <div className={styles.paragraph}>
           <p className={styles.big}>
@@ -40,7 +47,7 @@ export default function HomePage() {
         </div>
       </div>
       <div>
-        <p>
+        <p className={styles.verse}>
           Train up a child in the way he should go: and when he is old, he will not depart from it.
           <br />
           Proverbs 22:6

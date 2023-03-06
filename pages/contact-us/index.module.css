@@ -1,10 +1,52 @@
 .title {
+    margin-top: 2.5%;
     text-align: center;
+    font-size: xxx-large ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
-.div {
-    /* background-color: #a3c585    ; */
-    
+.submitted {
+    margin-top: 2.5%;
+    text-align: center;
+    font-size: xxx-large ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #04AA6D;
+    font-weight: bold;
+
+
+}
+
+
+.wrapper {
+    margin-top: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    display: table;
+}
+
+.inputTitle {
+    font-size: x-large;
+    /* text-align: left; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.type {
+    padding: 0.75rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 2.5%;
+    width: 500px;
+}
+
+.message {
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 2.5%;
+    width: 500px;
+
 }
 
 .container {
@@ -14,23 +56,19 @@
 }
 
 .formcontrol {
-    margin-bottom:10px ;
+    margin-bottom: 10px;
     border-color: black;
 }
 
 .button {
-    margin-top: 2.5%;
-    margin-bottom:10% ;
-    
-}
-
-.errormessage {
-    margin-top: 5%;
-    font-size: larger;
-    color: #D2042D	;
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px;
     text-align: center;
-}
-
-.noclick {
-    pointer-events: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
 }

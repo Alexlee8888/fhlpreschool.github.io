@@ -1,141 +1,129 @@
 import { Button, Center, Container, FormControl, FormErrorMessage, FormLabel, Heading, Input, Text, Textarea, useToast } from '@chakra-ui/react';
 import styles from './index.module.css';
 import { useState } from 'react';
-import { sendContactForm } from '../../lib/api';
 import NavigationBar from '../../components/layout/NavigationBar';
 import { ChakraProvider } from '@chakra-ui/react'
 import bg from '../../public/Contact.png'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 import Image from 'next/image';
+import { useForm, ValidationError } from '@formspree/react';
 
 
 
 
-const initValues = { name: "", email: "", message: "", }
-const initState = { values: initValues }
+
 
 export default function ContactPage() {
     const toast = useToast();
-    const [state, setState] = useState(initState);
-    const [touch, setTouch] = useState({});
+    const initValues = { name: "", email: "", message: "", }
+    const initState = { values: initValues }
+    const [state, handleSubmit] = useForm("mvonrlje");
 
-    const { values, isLoading, error } = state;
-
-    const onSubmit = async () => {
-        setState((prev) => ({
-            ...prev,
-            isLoading: true
-        }));
-        try {
-            await sendContactForm(values);
-            setTouch({});
-            setState(initState);
-            toast({
-                title: "Success!",
-                status: "success",
-                duration: 2000,
-                position: "top"
-            })
-        } catch (error) {
-            setState((prev) => ({
-                ...prev,
-                isLoading: false,
-                error: error.message
-            }));
-        }
-
+    if (state.succeeded) {
+        toast({
+            title: "Success!",
+            status: "success",
+            duration: 2000,
+            position: "top"
+        })
+        return (
+            <div>
+                <Image
+                    src={bg}
+                    className={styles.noclick}
+                    layout='responsive'
+                />
+                <h1 className={styles.submitted}>
+                    Success!
+                </h1>
+            </div>
+        )
     }
 
-    const onBlur = ({ target }) => setTouch((prev) => ({
-        ...prev, [target.name]: true
-    }))
-
-    const handleChange = ({ target }) => setState((prev) => ({
-        ...prev,
-        values: {
-            ...prev.values,
-            [target.name]: target.value,
-        },
-    }))
-
     return (
-        <div>
+        <div >
             <Image
                 src={bg}
                 className={styles.noclick}
                 layout='responsive'
             />
+            <h1 className={styles.title}>
+                Contact Us
+            </h1>
+            <form onSubmit={handleSubmit} className={styles.wrapper}>
 
-            <ChakraProvider>
-                <Container className={styles.container}>
-                    <Heading className={styles.title}>Contact Us</Heading>
+                <br />
+                <label htmlFor='firstName' className={styles.inputTitle}>
+                    First Name
+                </label>
+                <br />
+                <input className={styles.type} required placeholder='First Name'
+                    id="name"
+                    name="firstName" />
+                <ValidationError
+                    prefix="fn"
+                    field="firstName"
+                    errors={state.errors}
+                />
 
 
-                    {error && (
-                        <header className={styles.errormessage}>
-                            {error}
-                        </header>
-                    )}
 
-                    <FormControl isRequired isInvalid={touch.name && !values.name} className={styles.formcontrol}>
-                        <FormLabel>Name</FormLabel>
-                        <Input
-                            type='text'
-                            name="name"
-                            errorBorderColor='red.300'
-                            value={values.name}
-                            onChange={handleChange}
-                            onBlur={onBlur}
+                <br />
+                <label htmlFor='lastName' className={styles.inputTitle}>
+                    Last Name
+                </label>
+                <br />
+                <input className={styles.type} required placeholder='Last Name'
+                    id="name"
+                    name="lastName" />
+                <ValidationError
+                    prefix="ln"
+                    field="lastName"
+                    errors={state.errors}
+                />
 
-                        />
-                        <FormErrorMessage>Required</FormErrorMessage>
-                    </FormControl>
 
-                    <FormControl isRequired isInvalid={touch.email && !values.email} className={styles.formcontrol}>
-                        <FormLabel>Email</FormLabel>
-                        <Input
-                            type='email'
-                            name="email"
-                            errorBorderColor='red.300'
-                            value={values.email}
-                            onChange={handleChange}
-                            onBlur={onBlur}
-                        />
-                        <FormErrorMessage>Required</FormErrorMessage>
-                    </FormControl>
 
-                    <FormControl isRequired isInvalid={touch.message && !values.message} className={styles.formcontrol}>
-                        <FormLabel>Message</FormLabel>
-                        <Textarea
-                            type='text'
-                            name="message"
-                            errorBorderColor='red.300'
-                            rows={5}
-                            value={values.message}
-                            onChange={handleChange}
-                            onBlur={onBlur}
-                        />
-                        <FormErrorMessage>Required</FormErrorMessage>
+                <br />
+                <label htmlFor="Email" className={styles.inputTitle}>
+                    Email Address
+                </label>
+                <br />
+                <input className={styles.type} required placeholder='Email Address'
+                    id="email"
+                    type="email"
+                    name="email"
+                />
+                <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                />
 
-                    </FormControl>
 
-                    <Center>
-                        <Button
-                            className={styles.button}
-                            alignSelf="center"
-                            variant="outline"
-                            colorScheme='blue'
-                            isLoading={isLoading}
-                            isDisabled={!values.name || !values.email || !values.message}
-                            onClick={onSubmit}
-                        >
-                            Submit
-                        </Button>
-                    </Center>
 
-                </Container>
-            </ChakraProvider>
+                <br />
+                <label htmlFor="Message" className={styles.inputTitle}>
+                    Message
+                </label>
+                <br />
+                <textarea className={styles.type} required placeholder='Message'
+                    id="message"
+                    name="message"
+                />
+                <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                />
+
+
+
+                <br />
+                <button type="submit" disabled={state.submitting} className={styles.button}>
+                    Submit
+                </button>
+            </form>
         </div>
-
     );
 }

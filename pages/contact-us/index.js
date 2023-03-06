@@ -53,32 +53,16 @@ export default function ContactPage() {
             <form onSubmit={handleSubmit} className={styles.wrapper}>
 
                 <br />
-                <label htmlFor='firstName' className={styles.inputTitle}>
-                    First Name
+                <label htmlFor='Name' className={styles.inputTitle}>
+                    Name
                 </label>
                 <br />
-                <input className={styles.type} required placeholder='First Name'
+                <input className={styles.type} required placeholder='Name'
                     id="name"
-                    name="firstName" />
+                    name="name" />
                 <ValidationError
-                    prefix="fn"
-                    field="firstName"
-                    errors={state.errors}
-                />
-
-
-
-                <br />
-                <label htmlFor='lastName' className={styles.inputTitle}>
-                    Last Name
-                </label>
-                <br />
-                <input className={styles.type} required placeholder='Last Name'
-                    id="name"
-                    name="lastName" />
-                <ValidationError
-                    prefix="ln"
-                    field="lastName"
+                    prefix="Name"
+                    field="name"
                     errors={state.errors}
                 />
 

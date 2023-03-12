@@ -5,11 +5,18 @@ import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 import NavBar from '../../components/layout/NavigationBar';
 import Footer from '../../components/layout/Footer';
 import Image from 'next/image';
+import Head from 'next/head';
 
 
 export default function OurPhilosophyPage() {
     return (
         <div className={styles.wrapper}>
+            <Head>
+                <title>Our Philosophy - Faith Hope & Love Preschool</title>
+                <meta name='description' content="Our school's philosophy and what we do to help your children reach their full potential" />
+                <meta property='og:title' content='Our Philosophy - Faith Hope & Love Preschool' />
+                <link rel='icon' href='/favicon.ico' />
+            </Head>
             <div>
                 <Image
                     src={bg}

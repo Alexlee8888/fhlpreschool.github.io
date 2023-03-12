@@ -3,10 +3,17 @@ import bg from '../../public/Enrollment.png'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 import Footer from '../../components/layout/Footer';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function EnrollmentPage() {
     return (
         < div className={styles.wrapper} >
+            <Head>
+                <title>Enrollment - Faith Hope & Love Preschool</title>
+                <meta name='description' content='Fill out these forms to enroll at Faith Hope & Love Preschool' />
+                <meta property='og:title' content='Enrollment - Faith Hope & Love Preschool' />
+                <link rel='icon' href='/favicon.ico' />
+            </Head>
             <div>
                 <Image
                     src={bg}

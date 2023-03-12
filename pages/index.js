@@ -5,6 +5,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from 'next/image';
 import bg from '../public/FHLHomePage.png'
+import Head from 'next/head';
+import Link from 'next/link';
 
 
 
@@ -31,6 +33,12 @@ const responsive = {
 export default function HomePage() {
   return (
     <div className={styles.bgc}>
+      <Head>
+        <title>About Us - Faith Hope & Love Preschool</title>
+        <meta name = 'description' content='Faith Hope & Love is a preschool where children are loved, encouraged and nurtured to reach their full intellectual, emotional, spiritual, and physical potentials. '/>
+        <meta property='og:title' content='About Us - Faith Hope & Love Preschool'/>        
+        <link rel='icon' href='/favicon.ico'/>
+      </Head>
       <Image
         src={bg}
         className={styles.noclick}

@@ -3,10 +3,17 @@ import bg from '../../public/Curriculum.png'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 import Footer from '../../components/layout/Footer';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function CurriculumPage() {
     return (
         <div className={styles.wrapper}>
+            <Head>
+                <title> Curriculum - Faith Hope & Love Preschool</title>
+                <meta name='description' content='Check out our curriculum at Faith Hope & Love' />
+                <meta property='og:title' content='Curriculum - Faith Hope & Love Preschool' />
+                <link rel='icon' href='/favicon.ico' />
+            </Head>
             <div>
                 <Image
                     src={bg}

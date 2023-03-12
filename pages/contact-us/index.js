@@ -7,6 +7,7 @@ import bg from '../../public/Contact.png'
 import ParallaxLayout from '../../components/parallax/ParallaxLayout';
 import Image from 'next/image';
 import { useForm, ValidationError } from '@formspree/react';
+import Head from 'next/head';
 
 
 
@@ -42,6 +43,12 @@ export default function ContactPage() {
 
     return (
         <div >
+            <Head>
+                <title>Contact Us - Faith Hope & Love Preschool</title>
+                <meta name='description' content='Contact Us here!' />
+                <meta property='og:title' content='Contact Us - Faith Hope & Love Preschool' />
+                <link rel='icon' href='/favicon.ico' />
+            </Head>
             <Image
                 src={bg}
                 className={styles.noclick}

@@ -43,6 +43,9 @@ export default function ContactPage() {
 
     return (
         <div >
+            <div className={styles.blank}>
+
+            </div>
             <Head>
                 <title>Contact Us - Faith Hope & Love Preschool</title>
                 <meta name='description' content='Contact Us here!' />

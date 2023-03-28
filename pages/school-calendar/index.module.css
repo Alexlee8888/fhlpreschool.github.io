@@ -13,3 +13,9 @@
 .noclick {
   pointer-events: none;
 }
+
+@media (max-width: 767px) {
+  .blank {
+      height: 70px;
+  }
+}

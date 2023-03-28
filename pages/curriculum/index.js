@@ -8,6 +8,9 @@ import Head from 'next/head';
 export default function CurriculumPage() {
     return (
         <div className={styles.wrapper}>
+            <div className={styles.blank}>
+
+            </div>
             <Head>
                 <title> Curriculum - Faith Hope & Love Preschool</title>
                 <meta name='description' content='Check out our curriculum at Faith Hope & Love' />
@@ -137,6 +140,7 @@ export default function CurriculumPage() {
                     to communicate their feelings and learn social behaviors with
                     their peers. The playground is the place where they will learn
                     many important life lessons and values of sharing, empathy, kindness etc.
+                    <br/>
                 </p>
             </div>
         </div>

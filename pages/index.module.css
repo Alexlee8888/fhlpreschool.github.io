@@ -41,6 +41,11 @@
 .big {
     font-size: xx-large;
 }
+@media (max-width: 767px) {
+    .big {
+      font-size: larger;
+    }
+  }
 
 .image {
     width:auto;
@@ -79,3 +84,21 @@
 .noclick {
     pointer-events: none;
 }
+
+.iframe {
+    width: 951px;
+    height: 535px;
+}
+@media (max-width: 767px) {
+    .iframe {
+      width: 400px;
+      height: 300px;
+    }
+  }
+
+
+  @media (max-width: 767px) {
+    .blank {
+        height: 70px;
+    }
+  }

@@ -11,6 +11,9 @@ import Head from 'next/head';
 export default function SchoolCalendarPage() {
     return (
         <>
+            <div className={styles.blank}>
+
+            </div>
             <Head>
                 <title>School Calendar - Faith Hope & Love Preschool</title>
                 <meta name='description' content='Here is the school calendar for the year' />

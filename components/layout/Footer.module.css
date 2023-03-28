@@ -12,9 +12,21 @@
     font-size: xx-large;
 }
 
+@media (max-width: 767px) {
+    .schoolName {
+        font-size: x-large;
+        font-weight: bold;
+    }
+  }
+
 .otherInfo {
     font-size: larger;
 }
+@media (max-width: 767px) {
+    .otherInfo {
+        font-size: large;
+    }
+  }
 
 .link {
     color: blue;

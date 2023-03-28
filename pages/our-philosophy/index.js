@@ -11,6 +11,9 @@ import Head from 'next/head';
 export default function OurPhilosophyPage() {
     return (
         <div className={styles.wrapper}>
+            <div className={styles.blank}>
+
+            </div>
             <Head>
                 <title>Our Philosophy - Faith Hope & Love Preschool</title>
                 <meta name='description' content="Our school's philosophy and what we do to help your children reach their full potential" />

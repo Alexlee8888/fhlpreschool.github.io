@@ -3,16 +3,34 @@
     text-align: left;
 }
 
+@media (max-width: 767px) {
+    .title {
+        font-size: 24px;
+    }
+  }
+
 .para1 {
     font-size: xx-large;
     text-align: center;
 }
 
+@media (max-width: 767px) {
+    .para1 {
+        font-size: x-large;
+        text-align: center;
+    }
+  }
+
 .para2 {
     font-size: xx-large;
     text-align: left;
 }
-
+@media (max-width: 767px) {
+    .para2 {
+        font-size: x-large;
+        text-align: left;
+    }
+  }
 .bullets {
     list-style-type: '\2713';
     text-align: left;
@@ -20,6 +38,16 @@
     list-style-position: outside;
     margin-left: 2.5%;
 }
+
+@media (max-width: 767px) {
+    .bullets {
+        list-style-type: '\2713';
+        text-align: left;
+        font-size: x-large;
+        list-style-position: outside;
+        margin-left: 2.5%;
+    }
+  }
 
 .ub {
     text-decoration: underline;
@@ -65,3 +93,9 @@
 .noclick {
     pointer-events: none;
 }
+
+@media (max-width: 767px) {
+    .blank {
+        height: 70px;
+    }
+  }

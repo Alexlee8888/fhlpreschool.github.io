@@ -10,6 +10,9 @@ import Head from 'next/head';
 export default function DailySchedulePage() {
     return (
         <>
+            <div className={styles.blank}>
+
+            </div>
             <Head>
                 <title>Daily Schedule - Faith Hope & Love Preschool</title>
                 <meta name='description' content='Check out our daily schedule at Faith Hope & Love Preschool' />

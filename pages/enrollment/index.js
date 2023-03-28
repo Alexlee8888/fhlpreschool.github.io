@@ -8,6 +8,9 @@ import Head from 'next/head';
 export default function EnrollmentPage() {
     return (
         < div className={styles.wrapper} >
+            <div className={styles.blank}>
+
+            </div>
             <Head>
                 <title>Enrollment - Faith Hope & Love Preschool</title>
                 <meta name='description' content='Fill out these forms to enroll at Faith Hope & Love Preschool' />
@@ -43,9 +46,6 @@ export default function EnrollmentPage() {
                         className={styles.column}
                     ></iframe>
                 </div>
-                <p className={styles.para1}>
-                    Thank you!
-                </p>
             </div>
         </div>
     );

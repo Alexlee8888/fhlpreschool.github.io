@@ -33,17 +33,22 @@ const responsive = {
 export default function HomePage() {
   return (
     <div className={styles.bgc}>
+      <div className={styles.blank}>
+
+      </div>
       <Head>
         <title>About Us - Faith Hope & Love Preschool</title>
-        <meta name = 'description' content='Faith Hope & Love is a preschool where children are loved, encouraged and nurtured to reach their full intellectual, emotional, spiritual, and physical potentials. '/>
-        <meta property='og:title' content='About Us - Faith Hope & Love Preschool'/>        
-        <link rel='icon' href='/favicon.ico'/>
+        <meta name='description' content='Faith Hope & Love is a preschool where children are loved, encouraged and nurtured to reach their full intellectual, emotional, spiritual, and physical potentials. ' />
+        <meta property='og:title' content='About Us - Faith Hope & Love Preschool' />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Image
-        src={bg}
-        className={styles.noclick}
-        layout='responsive'
-      />
+      <div className={styles.banner}>
+        <Image
+          src={bg}
+          className={styles.noclick}
+          layout='responsive'
+        />
+      </div>
       <div className={styles.container}>
         <div className={styles.paragraph}>
           <p className={styles.big}>
@@ -66,7 +71,7 @@ export default function HomePage() {
       </div>
       <div className={styles.videobg}>
         <div className={styles.video}>
-          <iframe width="951" height="535" src="https://www.youtube.com/embed/15lzFgt7cig" title="FHL Preschool Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          <iframe className={styles.iframe} src="https://www.youtube.com/embed/15lzFgt7cig" title="FHL Preschool Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         </div>
       </div>
       <div className={styles.carobg}>

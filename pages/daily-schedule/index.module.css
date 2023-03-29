@@ -19,3 +19,14 @@
       height: 70px;
   }
 }
+
+
+.banner {
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .noclick {
+    object-fit: cover !important;
+    height: 200px !important;
+  }
+}

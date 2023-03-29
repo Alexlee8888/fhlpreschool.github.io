@@ -81,9 +81,19 @@
     font-weight: bold;
 }
 
+
+.banner {
+    object-fit: cover;
+}
 .noclick {
     pointer-events: none;
 }
+@media (max-width: 767px) {
+    .noclick {
+      object-fit: cover !important;
+      height: 269px !important;
+    }
+  }
 
 .iframe {
     width: 951px;

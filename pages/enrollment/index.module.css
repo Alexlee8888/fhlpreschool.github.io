@@ -4,11 +4,11 @@
     text-align: center;
 }
 
-.para1 {
-    font-size:xx-large; 
-    text-align: center;
-    padding-top:10px;
-}
+@media (max-width: 767px) {
+    .para{
+        font-size: x-large;
+    }
+  }
 
 
 .wrapper {
@@ -55,5 +55,16 @@
 @media (max-width: 767px) {
     .blank {
         height: 70px;
+    }
+  }
+
+
+.banner {
+    object-fit: cover;
+}
+@media (max-width: 767px) {
+    .noclick {
+      object-fit: cover !important;
+      height: 200px !important;
     }
   }
